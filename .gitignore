@@ -34,3 +34,5 @@ Results/Figs/**
 *.png
 *.jpg
 *.jpeg
+*.svg
+*.af
