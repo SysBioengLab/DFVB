@@ -29,7 +29,7 @@ MANIFEST
 *.json
 
 # Figures
-Results/Figs/
+Results/Figs/**
 *.pdf
 *.png
 *.jpg
