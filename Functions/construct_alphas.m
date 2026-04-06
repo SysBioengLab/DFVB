@@ -1,10 +1,11 @@
 function problem = construct_alphas(model,N)
 %--------------------------------------------------------------------------
 % Dynamic conversion balance analysis model constructor
-% It constructs the optimization model using conversion matrix
+% It constructs the optimization model using sparse null basis
 %
 % Inputs:
 %        model  : metabolic model in standard form
+%        N      : null basis of the stoichiometric matrix
 %--------------------------------------------------------------------------
 %Extract data from model
 
@@ -13,8 +14,9 @@ ub = model.ub;  % Upper boundaries
 c  = model.c ;  % Objective function
 
 %Build optimization problem and extract parameters
+
 if isempty(N)
-    N = null(model.S,"rational");
+    N = sparseNull(model.S, 1e-8);
 end
 
 exchanges  = find(findExcRxns(model, true));

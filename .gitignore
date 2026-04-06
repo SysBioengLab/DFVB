@@ -28,7 +28,8 @@ MANIFEST
 *.code-workspace
 *.json
 
-# Figuras
+# Figures
+Results/Figs/
 *.pdf
 *.png
 *.jpg

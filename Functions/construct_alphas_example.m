@@ -1,11 +1,20 @@
 function problem = construct_alphas_example(model, N)
+%--------------------------------------------------------------------------
+% Dynamic conversion balance analysis model constructor for the toy model
+% based on Zhao et al. (2017), Example 1: Spirallus.
+% It constructs the optimization model using sparse null basis
+%
+% Inputs:
+%        model  : metabolic model in standard form
+%        N      : null basis of the stoichiometric matrix
+%--------------------------------------------------------------------------
 
 lb = model.lb;  % Lower boundaries      
 ub = model.ub;  % Upper boundaries
 c  = model.c ;  % Objective function
 
 if isempty(N)
-    N = NullS_5(model);
+    N = sparseNull(model.S, 1e-8);
 end
 exchanges = [1, 6, 7];
 nullS      = N(exchanges,:);

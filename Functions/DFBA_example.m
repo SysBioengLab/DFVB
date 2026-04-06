@@ -12,6 +12,10 @@ function [dy, v] = DFBA_example(t,y,model,index,params)
 %        index  : vector with metabolic index in solution
 %        params : (qs_max, k_S) 
 %
+% Outputs:
+%        dy     : vector with derivatives of metabolites
+%        v      : vector with fluxes of the system
+%
 %--------------------------------------------------------------------------
 
 %% Parameters

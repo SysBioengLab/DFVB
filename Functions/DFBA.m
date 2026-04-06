@@ -1,49 +1,26 @@
 function [dy, v, fva_min, fva_max] = DFBA(t,y,model,idx_met,idx_flux,params, FVA)
 %--------------------------------------------------------------------------
-% Dynamic flux balance analysis 
-% Resolve an optimization problem for pseudoestationary state S*v, with 
-% ODEs for biomass, substrate (glucose) and product (protein). Based on
-% Zhao et al 2017, Example 1: Spirallus
+% Dynamic Flux Balance Analysis (DFBA)
+%
+% Solves a pseudo-steady-state flux balance model at each time step and
+% couples the resulting fluxes to an ODE system for metabolite and biomass
+% dynamics.
 %
 % Inputs:
-%        t      : vector of time
-%        y      : vector with actual state of metabolites
-%        model  : standard form of metabolic network
-%        ix_glc : index of glucose flux in matrix S
-%        ix_bio : index of biomass flux in matrix S
-%        ix_prot: index of protein flux in matrix S
-%        params : (qs_max, k_S) for Monod
-%        FVA    : true for run flux variability analysis at each iteration
+%   t        : Current simulation time
+%   y        : State vector of metabolite concentrations
+%   model    : COBRA model in standard stoichiometric form
+%   idx_met  : Indices of metabolites in y
+%   idx_flux : Indices of fluxes in the COBRA model
+%   params   : Parameter vector [q_max, K_S] for Monod uptake kinetics
+%   FVA      : Logical flag to enable flux variability analysis
+%
+% Outputs:
+%   dy       : Time derivatives of the state vector
+%   v        : Optimal flux vector
+%   fva_min  : Minimum fluxes from FVA
+%   fva_max  : Maximum fluxes from FVA
 %--------------------------------------------------------------------------
-
-% %% Rutine for extract iteration time
-% % Variable persistente para almacenar el tiempo anterior
-% persistent prevTime1
-% persistent iteration_time1
-% 
-% if isempty(prevTime1)
-%     prevTime1 = tic;
-% end
-% 
-% if t == 0
-%     iteration_time1 = [];
-% end
-% % Si no hay flag, estamos en una iteración
-% iteration_time1 = [iteration_time1 toc(prevTime1)];  % Tiempo desde la última iteración
-% 
-% if t == 2
-%     figure
-%     plot(iteration_time1)
-%     grid on
-%     xlabel('Iteration')
-%     ylabel('Time (s)')
-%     title('Iteration Time dFBA')
-%     % disp(sum(iteration_time1))
-%     fprintf('Cantidad de iteraciones = %d \n',size(iteration_time1,2))
-% end   
-% 
-% % Inicializar variable persistente
-% prevTime1 = tic;  % Iniciar cronómetro
 
 if nargin < 7
     FVA = false;

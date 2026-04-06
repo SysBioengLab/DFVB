@@ -11,7 +11,7 @@ t_span = [0, 12];
 
 
 % Simulate first period
-[T_sol, Y_sol] = ode113(@dfna2fit_sanchez, t_span,y0,options,theta, modelo.model_DFNA, modelo.index, modelo.alpha_dim);
+[T_sol, Y_sol] = ode113(@dfvb2fit_sanchez, t_span,y0,options,theta, modelo.model_DFNA, modelo.index, modelo.alpha_dim);
 
 % Calculate error
 sol_interp  = interp1(T_sol, Y_sol, data_exp.t_exp, "spline", "extrap");

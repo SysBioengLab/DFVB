@@ -1,5 +1,12 @@
 function gmodel = model2gurobi(model)
-
+%--------------------------------------------------------------------------
+% Converts a metabolic model in COBRA format to a Gurobi optimization model.
+% Inputs:
+%   model - COBRA metabolic model structure.
+%
+% Outputs:
+%   gmodel - Gurobi optimization model structure.
+%--------------------------------------------------------------------------
 % Gurobi params
 gmodel.A     = sparse(model.S);
 gmodel.lb    = model.lb;

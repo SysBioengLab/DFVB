@@ -1,4 +1,14 @@
 function [lb_alpha, ub_alpha] = alpha_range(model)
+%--------------------------------------------------------------------------
+% Computes the lower and upper bounds for the alpha variables in the DFVB framework by solving a
+% series of optimization problems using Gurobi.
+% Inputs:
+%   model - Gurobi optimization model structure with alpha variables included.
+%
+% Outputs:
+%   lb_alpha - Lower bounds for the alpha variables.
+%   ub_alpha - Upper bounds for the alpha variables.
+% --------------------------------------------------------------------------
 
 n        = length(model.alphalb);
 lb_alpha = zeros(n,1);

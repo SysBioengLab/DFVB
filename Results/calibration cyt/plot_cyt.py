@@ -9,9 +9,9 @@ ub_DFBA = pd.read_csv('UB_Bootstraping_DFBA.csv')
 lb_DFBA = pd.read_csv('LB_Bootstraping_DFBA.csv')
 mean_DFBA = pd.read_csv('Mean_Bootstraping_DFBA.csv')
 
-ub_DFNA = pd.read_csv('UB_Bootstraping_DFNA.csv')
-lb_DFNA = pd.read_csv('LB_Bootstraping_DFNA.csv')
-mean_DFNA = pd.read_csv('Mean_Bootstraping_DFNA.csv')
+ub_DFVB = pd.read_csv('UB_Bootstraping_DFVB.csv')
+lb_DFVB = pd.read_csv('LB_Bootstraping_DFVB.csv')
+mean_DFVB = pd.read_csv('Mean_Bootstraping_DFVB.csv')
 
 data_exp = pd.read_csv('Experiment_1.csv')
 
@@ -35,11 +35,11 @@ for var, ylabel in zip(variables, ylabels):
     x_exp = data_exp.loc[mask, 'Time']
     y_exp = data_exp.loc[mask, var]
     interp_DFBA = interp1d(mean_DFBA['Time'], mean_DFBA[var], kind='linear', fill_value='extrapolate')
-    interp_DFNA = interp1d(mean_DFNA['Time'], mean_DFNA[var], kind='linear', fill_value='extrapolate')
+    interp_DFVB = interp1d(mean_DFVB['Time'], mean_DFVB[var], kind='linear', fill_value='extrapolate')
     y_model_DFBA = interp_DFBA(x_exp)
-    y_model_DFNA = interp_DFNA(x_exp)
+    y_model_DFVB = interp_DFVB(x_exp)
     rmse_DFBA = np.sqrt(np.mean((y_model_DFBA - y_exp) ** 2))
-    rmse_DFVB = np.sqrt(np.mean((y_model_DFNA - y_exp) ** 2))
+    rmse_DFVB = np.sqrt(np.mean((y_model_DFVB - y_exp) ** 2))
     results.append({'Compuesto': ylabel, 'RMSE DFBA': rmse_DFBA, 'RMSE DFVB': rmse_DFVB})
 
 tabla_errores = pd.DataFrame(results)
@@ -56,9 +56,9 @@ fig, axes = plt.subplots(2, 3, figsize=(18, 9), dpi=500)
 
 for idx, (ax, var, ylabel) in enumerate(zip(axes.flat, variables, ylabels)):
     ax.fill_between(lb_DFBA['Time'], lb_DFBA[var], ub_DFBA[var], color=color2, alpha=0.3, label='DFBA 95% CI')
-    ax.fill_between(lb_DFNA['Time'], lb_DFNA[var], ub_DFNA[var], color=color1, alpha=0.3, label='DFVB 95% CI')
+    ax.fill_between(lb_DFVB['Time'], lb_DFVB[var], ub_DFVB[var], color=color1, alpha=0.3, label='DFVB 95% CI')
     ax.plot(mean_DFBA['Time'], mean_DFBA[var], color=color2, label='DFBA Mean', linewidth=2)
-    ax.plot(mean_DFNA['Time'], mean_DFNA[var], color=color1, label='DFVB Mean', linewidth=2)
+    ax.plot(mean_DFVB['Time'], mean_DFVB[var], color=color1, label='DFVB Mean', linewidth=2)
     ax.plot(data_exp['Time'], data_exp[var], 'o', color='black', label='Experimental Data')
     ax.set_xlim(0, 194)
     ax.set_ylabel(ylabel, fontsize=fontsize_labels)
@@ -86,7 +86,7 @@ plt.savefig('../Figs/Calibration_CyT.pdf', bbox_inches='tight')
 
 # Parameter analysis
 parameter_dfba = pd.read_csv("Bootstraping_params_DFBA_CYT.csv")
-parameter_dfna = pd.read_csv("Bootstraping_params_DFNA_CYT.csv")
+parameter_DFVB = pd.read_csv("Bootstraping_params_DFVB_CYT.csv")
 
 name_parameters = ['X_0', 'N_0', 'G_0', 'F_0', 'E_0', 'PAN_0',
                    r'\mu_0', 'K_n0', 'K_g0', 'K_f0', 'K_ie0', 'Y_xn', 'Y_xg', 'Y_xf', 'Y_ef', r'\beta_f0', r'\beta_ie0']
@@ -112,17 +112,17 @@ def ci_width_over_mean(df):
 
 # Uso
 ci_dfba = ci_width_over_mean(parameter_dfba)
-ci_dfna = ci_width_over_mean(parameter_dfna)
+ci_DFVB = ci_width_over_mean(parameter_DFVB)
 
-ci_dfna.index = name_parameters
+ci_DFVB.index = name_parameters
 ci_dfba.index = name_parameters
 
 comparacion_df = pd.DataFrame({
     'mean_dfba': ci_dfba['mean'],
     'std_dfba': ci_dfba['std'],
     'ci_width_over_mean_dfba': ci_dfba['ci_width_over_mean'],
-    'mean_dfvb': ci_dfna['mean'],
-    'std_dfvb': ci_dfna['std'],
-    'ci_width_over_mean_dfvb': ci_dfna['ci_width_over_mean']
+    'mean_dfvb': ci_DFVB['mean'],
+    'std_dfvb': ci_DFVB['std'],
+    'ci_width_over_mean_dfvb': ci_DFVB['ci_width_over_mean']
 })
 print(comparacion_df)

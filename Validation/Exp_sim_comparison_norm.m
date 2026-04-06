@@ -29,13 +29,13 @@ exp_data = readtable('log_tpm_glucosemedia_normalized.csv', 'VariableNamingRule'
 
 exp_only_data = table2array(exp_data(:,2:end));
 
-%% Compare FVA and DFNA
+%% Compare FVA and DFVB
 
 inactivas_fva       = find(rxns_fva.Var2==0);
 inativas_ns        = find(rxns_ns.Var2==0);
 intersect_activas = intersect(inactivas_fva, inativas_ns);
 
-new_dfna = setdiff(inativas_ns, inactivas_fva);
+new_DFVB = setdiff(inativas_ns, inactivas_fva);
 
 
 %% Calculate threshold
@@ -133,7 +133,7 @@ for k = 1:size(exp_only_data, 2)
     
     % Compare
     pos_inactive_exp = find(inactive_exp_idx);
-    new_rxns_found   = setdiff(pos_inactive_exp, new_dfna);
+    new_rxns_found   = setdiff(pos_inactive_exp, new_DFVB);
 
     % NS predictions
     pred_ns = sim_ns(inactive_exp_idx) == 0;
@@ -180,7 +180,7 @@ for k = 1:size(exp_only_data, 2)
     results.F1_NS(k)          = f1_ns;
     results.F1_FVA(k)         = f1_fva;
     results.New_rxn_found(k)      = length(new_rxns_found);
-    results.Diff_FVA_intersect(k) = length(new_dfna);
+    results.Diff_FVA_intersect(k) = length(new_DFVB);
 end
 
 %% Show results
@@ -202,19 +202,19 @@ for i = 1:4
     switch i
         case 1
             boxplot([results.Accuracy_NS(:), results.Accuracy_FVA(:)], ...
-                'Labels', {'DFNA', 'FVA'}, 'Whisker', 1.5);
+                'Labels', {'DFVB', 'FVA'}, 'Whisker', 1.5);
             title('Accuracy');
         case 4
             boxplot([results.F1_NS(:), results.F1_FVA(:)], ...
-                'Labels', {'DFNA', 'FVA'}, 'Whisker', 1.5);
+                'Labels', {'DFVB', 'FVA'}, 'Whisker', 1.5);
             title('F1-score');
         case 2
             boxplot([results.Precision_NS(:), results.Precision_FVA(:)], ...
-                'Labels', {'DFNA', 'FVA'}, 'Whisker', 1.5);
+                'Labels', {'DFVB', 'FVA'}, 'Whisker', 1.5);
             title('Precision');
         case 3
             boxplot([results.Recall_NS(:), results.Recall_FVA(:)], ...
-                'Labels', {'DFNA', 'FVA'}, 'Whisker', 1.5);
+                'Labels', {'DFVB', 'FVA'}, 'Whisker', 1.5);
             title('Recall');
     end
 

@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-02-02T00:53:25.947665</dc:date>
+    <dc:date>2026-04-06T13:06:08.634648</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.9.3, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -30,45 +30,45 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 54.14 254.4 
+    <path d="M 54.17 254.4 
 L 409.906471 254.4 
 L 409.906471 14.28 
-L 54.14 14.28 
+L 54.17 14.28 
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="line2d_1">
-    <path d="M 70.311203 243.485455 
-L 393.735267 243.485455 
-L 393.735267 243.485455 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke-dasharray: 20,20; stroke-dashoffset: 0; stroke: #000000; stroke-opacity: 0.4; stroke-width: 4"/>
+    <path d="M 70.33984 243.485455 
+L 393.736631 243.485455 
+L 393.736631 243.485455 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke-dasharray: 20,20; stroke-dashoffset: 0; stroke: #000000; stroke-opacity: 0.4; stroke-width: 4"/>
    </g>
    <g id="line2d_2">
-    <path d="M 70.311203 243.485455 
-L 393.735267 243.485455 
-L 393.735267 243.485455 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #000000; stroke-opacity: 0.2; stroke-width: 4; stroke-linecap: square"/>
+    <path d="M 70.33984 243.485455 
+L 393.736631 243.485455 
+L 393.736631 243.485455 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #000000; stroke-opacity: 0.2; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_3">
-      <path d="M 70.311203 254.4 
-L 70.311203 14.28 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 70.33984 254.4 
+L 70.33984 14.28 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_4">
       <defs>
-       <path id="m3e143d779a" d="M 0 0 
+       <path id="m858af05068" d="M 0 0 
 L 0 3.5 
 " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m3e143d779a" x="70.311203" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="70.33984" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
       <!-- 0.0 -->
-      <g transform="translate(59.809953 272.58) scale(0.16 -0.16)">
+      <g transform="translate(59.83859 272.58) scale(0.16 -0.16)">
        <defs>
         <path id="Cambria-30" d="M 1738 -50 
 Q 1063 -50 733 481 
@@ -105,25 +105,25 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_5">
-      <path d="M 134.996016 254.4 
-L 134.996016 14.28 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 135.019198 254.4 
+L 135.019198 14.28 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m3e143d779a" x="134.996016" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="135.019198" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
       <!-- 0.2 -->
-      <g transform="translate(124.494766 272.58) scale(0.16 -0.16)">
+      <g transform="translate(124.517948 272.58) scale(0.16 -0.16)">
        <defs>
         <path id="Cambria-32" d="M 2194 500 
 Q 2347 500 2440 519 
@@ -161,25 +161,25 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_7">
-      <path d="M 199.680829 254.4 
-L 199.680829 14.28 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 199.698556 254.4 
+L 199.698556 14.28 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#m3e143d779a" x="199.680829" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="199.698556" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
       <!-- 0.4 -->
-      <g transform="translate(189.179579 272.58) scale(0.16 -0.16)">
+      <g transform="translate(189.197306 272.58) scale(0.16 -0.16)">
        <defs>
         <path id="Cambria-34" d="M 1613 153 
 Q 1806 203 1872 264 
@@ -219,25 +219,25 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_4">
      <g id="line2d_9">
-      <path d="M 264.365642 254.4 
-L 264.365642 14.28 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 264.377914 254.4 
+L 264.377914 14.28 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_10">
       <g>
-       <use xlink:href="#m3e143d779a" x="264.365642" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="264.377914" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
       <!-- 0.6 -->
-      <g transform="translate(253.864392 272.58) scale(0.16 -0.16)">
+      <g transform="translate(253.876664 272.58) scale(0.16 -0.16)">
        <defs>
         <path id="Cambria-36" d="M 2847 4144 
 L 2847 3991 
@@ -280,25 +280,25 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_5">
      <g id="line2d_11">
-      <path d="M 329.050455 254.4 
-L 329.050455 14.28 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 329.057273 254.4 
+L 329.057273 14.28 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_12">
       <g>
-       <use xlink:href="#m3e143d779a" x="329.050455" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="329.057273" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
       <!-- 0.8 -->
-      <g transform="translate(318.549205 272.58) scale(0.16 -0.16)">
+      <g transform="translate(318.556023 272.58) scale(0.16 -0.16)">
        <defs>
         <path id="Cambria-38" d="M 2475 2253 
 L 2481 2213 
@@ -357,25 +357,25 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_6">
      <g id="line2d_13">
-      <path d="M 393.735267 254.4 
-L 393.735267 14.28 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 393.736631 254.4 
+L 393.736631 14.28 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_14">
       <g>
-       <use xlink:href="#m3e143d779a" x="393.735267" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="393.736631" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
       <!-- 1.0 -->
-      <g transform="translate(383.234017 272.58) scale(0.16 -0.16)">
+      <g transform="translate(383.235381 272.58) scale(0.16 -0.16)">
        <defs>
         <path id="Cambria-31" d="M 2172 816 
 Q 2172 634 2192 542 
@@ -404,14 +404,14 @@ z
 " transform="scale(0.015625)"/>
        </defs>
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="text_7">
      <!-- Time (h) -->
-     <g transform="translate(202.214485 291.15) scale(0.16 -0.16)">
+     <g transform="translate(202.229485 291.15) scale(0.16 -0.16)">
       <defs>
        <path id="Cambria-54" d="M 206 4266 
 L 3588 4266 
@@ -691,54 +691,54 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cambria-54"/>
-      <use xlink:href="#Cambria-69" transform="translate(59.277344 0)"/>
-      <use xlink:href="#Cambria-6d" transform="translate(87.060547 0)"/>
-      <use xlink:href="#Cambria-65" transform="translate(170.263672 0)"/>
-      <use xlink:href="#Cambria-20" transform="translate(219.042969 0)"/>
-      <use xlink:href="#Cambria-28" transform="translate(241.064453 0)"/>
-      <use xlink:href="#Cambria-68" transform="translate(279.248047 0)"/>
-      <use xlink:href="#Cambria-29" transform="translate(334.423828 0)"/>
+      <use xlink:href="#Cambria-69" x="59.277344"/>
+      <use xlink:href="#Cambria-6d" x="87.060547"/>
+      <use xlink:href="#Cambria-65" x="170.263672"/>
+      <use xlink:href="#Cambria-20" x="219.042969"/>
+      <use xlink:href="#Cambria-28" x="241.064453"/>
+      <use xlink:href="#Cambria-68" x="279.248047"/>
+      <use xlink:href="#Cambria-29" x="334.423828"/>
      </g>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_15">
-      <path d="M 54.14 243.485455 
+      <path d="M 54.17 243.485455 
 L 409.906471 243.485455 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_16">
       <defs>
-       <path id="maae5e25a9b" d="M 0 0 
+       <path id="me1e5eb6264" d="M 0 0 
 L -3.5 0 
 " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="243.485455" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="243.485455" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_8">
       <!-- 0 -->
-      <g transform="translate(38.28 249.075455) scale(0.16 -0.16)">
+      <g transform="translate(38.31 249.075455) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-30"/>
       </g>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_17">
-      <path d="M 54.14 191.488244 
+      <path d="M 54.17 191.488244 
 L 409.906471 191.488244 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_18">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="191.488244" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="191.488244" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_9">
       <!-- 5 -->
-      <g transform="translate(38.28 197.078244) scale(0.16 -0.16)">
+      <g transform="translate(38.31 197.078244) scale(0.16 -0.16)">
        <defs>
         <path id="Cambria-35" d="M 469 172 
 L 469 834 
@@ -780,64 +780,64 @@ z
     </g>
     <g id="ytick_3">
      <g id="line2d_19">
-      <path d="M 54.14 139.491033 
+      <path d="M 54.17 139.491033 
 L 409.906471 139.491033 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_20">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="139.491033" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="139.491033" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_10">
       <!-- 10 -->
-      <g transform="translate(29.42 145.081033) scale(0.16 -0.16)">
+      <g transform="translate(29.45 145.081033) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-30" transform="translate(55.371094 0)"/>
+       <use xlink:href="#Cambria-30" x="55.371094"/>
       </g>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_21">
-      <path d="M 54.14 87.493822 
+      <path d="M 54.17 87.493822 
 L 409.906471 87.493822 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_22">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="87.493822" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="87.493822" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_11">
       <!-- 15 -->
-      <g transform="translate(29.42 93.083822) scale(0.16 -0.16)">
+      <g transform="translate(29.45 93.083822) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-35" transform="translate(55.371094 0)"/>
+       <use xlink:href="#Cambria-35" x="55.371094"/>
       </g>
      </g>
     </g>
     <g id="ytick_5">
      <g id="line2d_23">
-      <path d="M 54.14 35.496612 
+      <path d="M 54.17 35.496612 
 L 409.906471 35.496612 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_24">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="35.496612" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="35.496612" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_12">
       <!-- 20 -->
-      <g transform="translate(29.42 41.086612) scale(0.16 -0.16)">
+      <g transform="translate(29.45 41.086612) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-32"/>
-       <use xlink:href="#Cambria-30" transform="translate(55.371094 0)"/>
+       <use xlink:href="#Cambria-30" x="55.371094"/>
       </g>
      </g>
     </g>
     <g id="text_13">
      <!-- Concentration (g/L) -->
-     <g transform="translate(21.9275 203.05) rotate(-90) scale(0.16 -0.16)">
+     <g transform="translate(21.9575 203.05) rotate(-90) scale(0.16 -0.16)">
       <defs>
        <path id="Cambria-43" d="M 3256 4175 
 L 3256 3309 
@@ -1192,254 +1192,254 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cambria-43"/>
-      <use xlink:href="#Cambria-6f" transform="translate(56.25 0)"/>
-      <use xlink:href="#Cambria-6e" transform="translate(109.326172 0)"/>
-      <use xlink:href="#Cambria-63" transform="translate(165.136719 0)"/>
-      <use xlink:href="#Cambria-65" transform="translate(209.228516 0)"/>
-      <use xlink:href="#Cambria-6e" transform="translate(258.007812 0)"/>
-      <use xlink:href="#Cambria-74" transform="translate(313.818359 0)"/>
-      <use xlink:href="#Cambria-72" transform="translate(347.65625 0)"/>
-      <use xlink:href="#Cambria-61" transform="translate(389.013672 0)"/>
-      <use xlink:href="#Cambria-74" transform="translate(437.841797 0)"/>
-      <use xlink:href="#Cambria-69" transform="translate(471.679688 0)"/>
-      <use xlink:href="#Cambria-6f" transform="translate(499.462891 0)"/>
-      <use xlink:href="#Cambria-6e" transform="translate(552.539062 0)"/>
-      <use xlink:href="#Cambria-20" transform="translate(608.349609 0)"/>
-      <use xlink:href="#Cambria-28" transform="translate(630.371094 0)"/>
-      <use xlink:href="#Cambria-67" transform="translate(668.554688 0)"/>
-      <use xlink:href="#Cambria-2f" transform="translate(717.96875 0)"/>
-      <use xlink:href="#Cambria-4c" transform="translate(766.992188 0)"/>
-      <use xlink:href="#Cambria-29" transform="translate(820.654297 0)"/>
+      <use xlink:href="#Cambria-6f" x="56.25"/>
+      <use xlink:href="#Cambria-6e" x="109.326172"/>
+      <use xlink:href="#Cambria-63" x="165.136719"/>
+      <use xlink:href="#Cambria-65" x="209.228516"/>
+      <use xlink:href="#Cambria-6e" x="258.007812"/>
+      <use xlink:href="#Cambria-74" x="313.818359"/>
+      <use xlink:href="#Cambria-72" x="347.65625"/>
+      <use xlink:href="#Cambria-61" x="389.013672"/>
+      <use xlink:href="#Cambria-74" x="437.841797"/>
+      <use xlink:href="#Cambria-69" x="471.679688"/>
+      <use xlink:href="#Cambria-6f" x="499.462891"/>
+      <use xlink:href="#Cambria-6e" x="552.539062"/>
+      <use xlink:href="#Cambria-20" x="608.349609"/>
+      <use xlink:href="#Cambria-28" x="630.371094"/>
+      <use xlink:href="#Cambria-67" x="668.554688"/>
+      <use xlink:href="#Cambria-2f" x="717.96875"/>
+      <use xlink:href="#Cambria-4c" x="766.992188"/>
+      <use xlink:href="#Cambria-29" x="820.654297"/>
      </g>
     </g>
    </g>
    <g id="line2d_25">
-    <path d="M 70.311203 233.086012 
-L 83.261116 231.464727 
-L 95.239785 229.74157 
-L 106.570958 227.885606 
-L 117.254636 225.907732 
-L 127.290818 223.822889 
-L 136.679505 221.650461 
-L 145.744443 219.3272 
-L 154.485634 216.854369 
-L 162.903077 214.236072 
-L 170.996773 211.478164 
-L 178.76672 208.589192 
-L 186.21292 205.578331 
-L 193.335372 202.458632 
-L 200.134076 199.244849 
-L 206.93278 195.7832 
-L 213.407736 192.239241 
-L 219.882692 188.437133 
-L 226.033901 184.569893 
-L 232.185109 180.437597 
-L 238.01257 176.262931 
-L 243.84003 171.816512 
-L 249.667491 167.090489 
-L 255.494952 162.065451 
-L 260.998664 157.030241 
-L 266.502377 151.699464 
-L 272.00609 146.058537 
-L 277.186055 140.43304 
-L 282.689768 134.154616 
-L 288.193481 127.531777 
-L 293.697193 120.554305 
-L 299.200906 113.213355 
-L 304.704619 105.50174 
-L 310.53208 96.932232 
-L 316.683288 87.479435 
-L 323.481992 76.610781 
-L 334.16567 58.973608 
-L 340.964374 47.946697 
-L 344.849348 42.020761 
-L 347.763078 37.961581 
-L 350.353061 34.687114 
-L 352.619295 32.188562 
-L 354.88553 30.06618 
-L 356.828017 28.643538 
-L 358.770504 27.518529 
-L 360.712991 26.726636 
-L 362.655477 26.175771 
-L 364.921712 25.74208 
-L 367.835442 25.42019 
-L 372.044164 25.214117 
-L 384.670329 25.194629 
-L 393.735267 25.194629 
-L 393.735267 25.194629 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #46039f; stroke-width: 4; stroke-linecap: square"/>
+    <path d="M 70.33984 233.086012 
+L 83.28866 231.464727 
+L 95.266319 229.74157 
+L 106.596537 227.885606 
+L 117.279314 225.907732 
+L 127.31465 223.822889 
+L 136.702545 221.650461 
+L 145.766719 219.3272 
+L 154.507173 216.854369 
+L 162.923906 214.236072 
+L 171.016919 211.478164 
+L 178.786211 208.589192 
+L 186.231783 205.578331 
+L 193.353634 202.458632 
+L 200.151765 199.244849 
+L 206.949896 195.7832 
+L 213.424306 192.239241 
+L 219.898716 188.437133 
+L 226.049406 184.569893 
+L 232.200096 180.437597 
+L 238.027065 176.262931 
+L 243.854034 171.816512 
+L 249.681003 167.090489 
+L 255.507972 162.065451 
+L 261.011221 157.030241 
+L 266.51447 151.699464 
+L 272.017719 146.058537 
+L 277.197247 140.43304 
+L 282.700495 134.154616 
+L 288.203744 127.531777 
+L 293.706993 120.554305 
+L 299.210242 113.213355 
+L 304.71349 105.50174 
+L 310.540459 96.932232 
+L 316.691149 87.479435 
+L 323.48928 76.610781 
+L 334.172057 58.973608 
+L 340.970188 47.946697 
+L 344.854834 42.020761 
+L 347.768318 37.961581 
+L 350.358082 34.687114 
+L 352.624126 32.188562 
+L 354.89017 30.06618 
+L 356.832493 28.643538 
+L 358.774816 27.518529 
+L 360.717139 26.726636 
+L 362.659462 26.175771 
+L 364.925505 25.74208 
+L 367.83899 25.42019 
+L 372.047357 25.214117 
+L 384.672457 25.194629 
+L 393.736631 25.194629 
+L 393.736631 25.194629 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #46039f; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="line2d_26">
-    <path d="M 70.311203 233.086012 
-L 83.261116 231.464727 
-L 95.239785 229.74157 
-L 106.570958 227.885606 
-L 117.254636 225.907732 
-L 127.290818 223.822889 
-L 136.679505 221.650461 
-L 145.744443 219.3272 
-L 154.485634 216.854369 
-L 162.903077 214.236072 
-L 170.996773 211.478164 
-L 178.76672 208.589192 
-L 186.21292 205.578331 
-L 193.335372 202.458632 
-L 200.134076 199.244849 
-L 206.93278 195.7832 
-L 213.407736 192.239241 
-L 219.882692 188.437133 
-L 226.033901 184.569893 
-L 232.185109 180.437597 
-L 238.01257 176.262931 
-L 243.84003 171.816512 
-L 249.667491 167.090489 
-L 255.494952 162.065451 
-L 260.998664 157.030241 
-L 266.502377 151.699464 
-L 272.00609 146.058537 
-L 277.186055 140.43304 
-L 282.689768 134.154616 
-L 288.193481 127.531777 
-L 293.697193 120.554305 
-L 299.200906 113.213355 
-L 304.704619 105.50174 
-L 310.53208 96.932232 
-L 316.683288 87.479435 
-L 323.481992 76.610781 
-L 334.16567 58.973608 
-L 340.964374 47.946697 
-L 344.849348 42.020761 
-L 347.763078 37.961581 
-L 350.353061 34.687114 
-L 352.619295 32.188562 
-L 354.88553 30.06618 
-L 356.828017 28.643538 
-L 358.770504 27.518529 
-L 360.712991 26.726636 
-L 362.655477 26.175771 
-L 364.921712 25.74208 
-L 367.835442 25.42019 
-L 372.044164 25.214117 
-L 384.670329 25.194629 
-L 393.735267 25.194629 
-L 393.735267 25.194629 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke-dasharray: 20,20; stroke-dashoffset: 0; stroke: #f7e425; stroke-width: 4"/>
+    <path d="M 70.33984 233.086012 
+L 83.28866 231.464727 
+L 95.266319 229.74157 
+L 106.596537 227.885606 
+L 117.279314 225.907732 
+L 127.31465 223.822889 
+L 136.702545 221.650461 
+L 145.766719 219.3272 
+L 154.507173 216.854369 
+L 162.923906 214.236072 
+L 171.016919 211.478164 
+L 178.786211 208.589192 
+L 186.231783 205.578331 
+L 193.353634 202.458632 
+L 200.151765 199.244849 
+L 206.949896 195.7832 
+L 213.424306 192.239241 
+L 219.898716 188.437133 
+L 226.049406 184.569893 
+L 232.200096 180.437597 
+L 238.027065 176.262931 
+L 243.854034 171.816512 
+L 249.681003 167.090489 
+L 255.507972 162.065451 
+L 261.011221 157.030241 
+L 266.51447 151.699464 
+L 272.017719 146.058537 
+L 277.197247 140.43304 
+L 282.700495 134.154616 
+L 288.203744 127.531777 
+L 293.706993 120.554305 
+L 299.210242 113.213355 
+L 304.71349 105.50174 
+L 310.540459 96.932232 
+L 316.691149 87.479435 
+L 323.48928 76.610781 
+L 334.172057 58.973608 
+L 340.970188 47.946697 
+L 344.854834 42.020761 
+L 347.768318 37.961581 
+L 350.358082 34.687114 
+L 352.624126 32.188562 
+L 354.89017 30.06618 
+L 356.832493 28.643538 
+L 358.774816 27.518529 
+L 360.717139 26.726636 
+L 362.659462 26.175771 
+L 364.925505 25.74208 
+L 367.83899 25.42019 
+L 372.047357 25.214117 
+L 384.672457 25.194629 
+L 393.736631 25.194629 
+L 393.736631 25.194629 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke-dasharray: 20,20; stroke-dashoffset: 0; stroke: #f7e425; stroke-width: 4"/>
    </g>
    <g id="line2d_27">
-    <path d="M 70.311203 35.496612 
-L 83.261116 37.117897 
-L 95.239785 38.841054 
-L 106.570958 40.697019 
-L 117.254636 42.674892 
-L 127.290818 44.759735 
-L 136.679505 46.932163 
-L 145.744443 49.255424 
-L 154.485634 51.728255 
-L 162.903077 54.346552 
-L 170.996773 57.10446 
-L 178.76672 59.993432 
-L 186.21292 63.004293 
-L 193.335372 66.123992 
-L 200.134076 69.337775 
-L 206.93278 72.799424 
-L 213.407736 76.343383 
-L 219.882692 80.145491 
-L 226.033901 84.012732 
-L 232.185109 88.145027 
-L 238.01257 92.319693 
-L 243.84003 96.766112 
-L 249.667491 101.492135 
-L 255.494952 106.517174 
-L 260.998664 111.552383 
-L 266.502377 116.88316 
-L 272.00609 122.524087 
-L 277.186055 128.149584 
-L 282.689768 134.428008 
-L 288.193481 141.050848 
-L 293.697193 148.028319 
-L 299.200906 155.369269 
-L 304.704619 163.080884 
-L 310.53208 171.650392 
-L 316.683288 181.10319 
-L 323.481992 191.971843 
-L 334.16567 209.609017 
-L 340.964374 220.635927 
-L 344.849348 226.561863 
-L 347.763078 230.621043 
-L 350.353061 233.89551 
-L 352.619295 236.394062 
-L 354.88553 238.516444 
-L 356.828017 239.939086 
-L 358.770504 241.064095 
-L 360.712991 241.855988 
-L 362.655477 242.406853 
-L 364.921712 242.840544 
-L 367.835442 243.162434 
-L 372.044164 243.368507 
-L 384.670329 243.387995 
-L 393.735267 243.387995 
-L 393.735267 243.387995 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke: #9c179e; stroke-width: 4; stroke-linecap: square"/>
+    <path d="M 70.33984 35.496612 
+L 83.28866 37.117897 
+L 95.266319 38.841054 
+L 106.596537 40.697019 
+L 117.279314 42.674892 
+L 127.31465 44.759735 
+L 136.702545 46.932163 
+L 145.766719 49.255424 
+L 154.507173 51.728255 
+L 162.923906 54.346552 
+L 171.016919 57.10446 
+L 178.786211 59.993432 
+L 186.231783 63.004293 
+L 193.353634 66.123992 
+L 200.151765 69.337775 
+L 206.949896 72.799424 
+L 213.424306 76.343383 
+L 219.898716 80.145491 
+L 226.049406 84.012732 
+L 232.200096 88.145027 
+L 238.027065 92.319693 
+L 243.854034 96.766112 
+L 249.681003 101.492135 
+L 255.507972 106.517174 
+L 261.011221 111.552383 
+L 266.51447 116.88316 
+L 272.017719 122.524087 
+L 277.197247 128.149584 
+L 282.700495 134.428008 
+L 288.203744 141.050848 
+L 293.706993 148.028319 
+L 299.210242 155.369269 
+L 304.71349 163.080884 
+L 310.540459 171.650392 
+L 316.691149 181.10319 
+L 323.48928 191.971843 
+L 334.172057 209.609017 
+L 340.970188 220.635927 
+L 344.854834 226.561863 
+L 347.768318 230.621043 
+L 350.358082 233.89551 
+L 352.624126 236.394062 
+L 354.89017 238.516444 
+L 356.832493 239.939086 
+L 358.774816 241.064095 
+L 360.717139 241.855988 
+L 362.659462 242.406853 
+L 364.925505 242.840544 
+L 367.83899 243.162434 
+L 372.047357 243.368507 
+L 384.672457 243.387995 
+L 393.736631 243.387995 
+L 393.736631 243.387995 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke: #9c179e; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="line2d_28">
-    <path d="M 70.311203 35.496612 
-L 83.261116 37.117897 
-L 95.239785 38.841054 
-L 106.570958 40.697019 
-L 117.254636 42.674892 
-L 127.290818 44.759735 
-L 136.679505 46.932163 
-L 145.744443 49.255424 
-L 154.485634 51.728255 
-L 162.903077 54.346552 
-L 170.996773 57.10446 
-L 178.76672 59.993432 
-L 186.21292 63.004293 
-L 193.335372 66.123992 
-L 200.134076 69.337775 
-L 206.93278 72.799424 
-L 213.407736 76.343383 
-L 219.882692 80.145491 
-L 226.033901 84.012732 
-L 232.185109 88.145027 
-L 238.01257 92.319693 
-L 243.84003 96.766112 
-L 249.667491 101.492135 
-L 255.494952 106.517174 
-L 260.998664 111.552383 
-L 266.502377 116.88316 
-L 272.00609 122.524087 
-L 277.186055 128.149584 
-L 282.689768 134.428008 
-L 288.193481 141.050848 
-L 293.697193 148.028319 
-L 299.200906 155.369269 
-L 304.704619 163.080884 
-L 310.53208 171.650392 
-L 316.683288 181.10319 
-L 323.481992 191.971843 
-L 334.16567 209.609017 
-L 340.964374 220.635927 
-L 344.849348 226.561863 
-L 347.763078 230.621043 
-L 350.353061 233.89551 
-L 352.619295 236.394062 
-L 354.88553 238.516444 
-L 356.828017 239.939086 
-L 358.770504 241.064095 
-L 360.712991 241.855988 
-L 362.655477 242.406853 
-L 364.921712 242.840544 
-L 367.835442 243.162434 
-L 372.044164 243.368507 
-L 384.670329 243.387995 
-L 393.735267 243.387995 
-L 393.735267 243.387995 
-" clip-path="url(#p642d8a813d)" style="fill: none; stroke-dasharray: 20,20; stroke-dashoffset: 0; stroke: #fb9f3a; stroke-width: 4"/>
+    <path d="M 70.33984 35.496612 
+L 83.28866 37.117897 
+L 95.266319 38.841054 
+L 106.596537 40.697019 
+L 117.279314 42.674892 
+L 127.31465 44.759735 
+L 136.702545 46.932163 
+L 145.766719 49.255424 
+L 154.507173 51.728255 
+L 162.923906 54.346552 
+L 171.016919 57.10446 
+L 178.786211 59.993432 
+L 186.231783 63.004293 
+L 193.353634 66.123992 
+L 200.151765 69.337775 
+L 206.949896 72.799424 
+L 213.424306 76.343383 
+L 219.898716 80.145491 
+L 226.049406 84.012732 
+L 232.200096 88.145027 
+L 238.027065 92.319693 
+L 243.854034 96.766112 
+L 249.681003 101.492135 
+L 255.507972 106.517174 
+L 261.011221 111.552383 
+L 266.51447 116.88316 
+L 272.017719 122.524087 
+L 277.197247 128.149584 
+L 282.700495 134.428008 
+L 288.203744 141.050848 
+L 293.706993 148.028319 
+L 299.210242 155.369269 
+L 304.71349 163.080884 
+L 310.540459 171.650392 
+L 316.691149 181.10319 
+L 323.48928 191.971843 
+L 334.172057 209.609017 
+L 340.970188 220.635927 
+L 344.854834 226.561863 
+L 347.768318 230.621043 
+L 350.358082 233.89551 
+L 352.624126 236.394062 
+L 354.89017 238.516444 
+L 356.832493 239.939086 
+L 358.774816 241.064095 
+L 360.717139 241.855988 
+L 362.659462 242.406853 
+L 364.925505 242.840544 
+L 367.83899 243.162434 
+L 372.047357 243.368507 
+L 384.672457 243.387995 
+L 393.736631 243.387995 
+L 393.736631 243.387995 
+" clip-path="url(#p0e10247111)" style="fill: none; stroke-dasharray: 20,20; stroke-dashoffset: 0; stroke: #fb9f3a; stroke-width: 4"/>
    </g>
    <g id="patch_3">
-    <path d="M 54.14 254.4 
-L 54.14 14.28 
+    <path d="M 54.17 254.4 
+L 54.17 14.28 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
@@ -1448,38 +1448,38 @@ L 409.906471 14.28
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_5">
-    <path d="M 54.14 254.4 
+    <path d="M 54.17 254.4 
 L 409.906471 254.4 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_6">
-    <path d="M 54.14 14.28 
+    <path d="M 54.17 14.28 
 L 409.906471 14.28 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="legend_1">
     <g id="patch_7">
-     <path d="M 63.94 166.05 
-L 239.357812 166.05 
-Q 242.157812 166.05 242.157812 163.25 
-L 242.157812 105.43 
-Q 242.157812 102.63 239.357812 102.63 
-L 63.94 102.63 
-Q 61.14 102.63 61.14 105.43 
-L 61.14 163.25 
-Q 61.14 166.05 63.94 166.05 
+     <path d="M 63.97 166.05 
+L 239.387812 166.05 
+Q 242.187812 166.05 242.187812 163.25 
+L 242.187812 105.43 
+Q 242.187812 102.63 239.387812 102.63 
+L 63.97 102.63 
+Q 61.17 102.63 61.17 105.43 
+L 61.17 163.25 
+Q 61.17 166.05 63.97 166.05 
 z
 " style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
     </g>
     <g id="line2d_29">
-     <path d="M 66.74 113.13 
-L 80.74 113.13 
-L 94.74 113.13 
+     <path d="M 66.77 113.13 
+L 80.77 113.13 
+L 94.77 113.13 
 " style="fill: none; stroke: #46039f; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_14">
      <!-- X, DFVB -->
-     <g transform="translate(105.94 118.03) scale(0.14 -0.14)">
+     <g transform="translate(105.97 118.03) scale(0.14 -0.14)">
       <defs>
        <path id="Cambria-58" d="M 1503 4266 
 L 1503 4113 
@@ -1710,23 +1710,23 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cambria-58"/>
-      <use xlink:href="#Cambria-2c" transform="translate(57.128906 0)"/>
-      <use xlink:href="#Cambria-20" transform="translate(77.636719 0)"/>
-      <use xlink:href="#Cambria-44" transform="translate(99.658203 0)"/>
-      <use xlink:href="#Cambria-46" transform="translate(165.820312 0)"/>
-      <use xlink:href="#Cambria-56" transform="translate(219.482422 0)"/>
-      <use xlink:href="#Cambria-42" transform="translate(279.833984 0)"/>
+      <use xlink:href="#Cambria-2c" x="57.128906"/>
+      <use xlink:href="#Cambria-20" x="77.636719"/>
+      <use xlink:href="#Cambria-44" x="99.658203"/>
+      <use xlink:href="#Cambria-46" x="165.820312"/>
+      <use xlink:href="#Cambria-56" x="219.482422"/>
+      <use xlink:href="#Cambria-42" x="279.833984"/>
      </g>
     </g>
     <g id="line2d_30">
-     <path d="M 66.74 132.87 
-L 80.74 132.87 
-L 94.74 132.87 
+     <path d="M 66.77 132.87 
+L 80.77 132.87 
+L 94.77 132.87 
 " style="fill: none; stroke: #9c179e; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_15">
      <!-- S, DFVB -->
-     <g transform="translate(105.94 137.77) scale(0.14 -0.14)">
+     <g transform="translate(105.97 137.77) scale(0.14 -0.14)">
       <defs>
        <path id="Cambria-53" d="M 663 972 
 Q 725 697 831 537 
@@ -1770,23 +1770,23 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cambria-53"/>
-      <use xlink:href="#Cambria-2c" transform="translate(49.609375 0)"/>
-      <use xlink:href="#Cambria-20" transform="translate(70.117188 0)"/>
-      <use xlink:href="#Cambria-44" transform="translate(92.138672 0)"/>
-      <use xlink:href="#Cambria-46" transform="translate(158.300781 0)"/>
-      <use xlink:href="#Cambria-56" transform="translate(211.962891 0)"/>
-      <use xlink:href="#Cambria-42" transform="translate(272.314453 0)"/>
+      <use xlink:href="#Cambria-2c" x="49.609375"/>
+      <use xlink:href="#Cambria-20" x="70.117188"/>
+      <use xlink:href="#Cambria-44" x="92.138672"/>
+      <use xlink:href="#Cambria-46" x="158.300781"/>
+      <use xlink:href="#Cambria-56" x="211.962891"/>
+      <use xlink:href="#Cambria-42" x="272.314453"/>
      </g>
     </g>
     <g id="line2d_31">
-     <path d="M 66.74 152.61 
-L 80.74 152.61 
-L 94.74 152.61 
+     <path d="M 66.77 152.61 
+L 80.77 152.61 
+L 94.77 152.61 
 " style="fill: none; stroke: #000000; stroke-opacity: 0.4; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_16">
      <!-- P, DFVB -->
-     <g transform="translate(105.94 157.51) scale(0.14 -0.14)">
+     <g transform="translate(105.97 157.51) scale(0.14 -0.14)">
       <defs>
        <path id="Cambria-50" d="M 1328 791 
 Q 1328 606 1348 497 
@@ -1830,23 +1830,23 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cambria-50"/>
-      <use xlink:href="#Cambria-2c" transform="translate(44.037109 0)"/>
-      <use xlink:href="#Cambria-20" transform="translate(64.544922 0)"/>
-      <use xlink:href="#Cambria-44" transform="translate(86.566406 0)"/>
-      <use xlink:href="#Cambria-46" transform="translate(152.728516 0)"/>
-      <use xlink:href="#Cambria-56" transform="translate(206.390625 0)"/>
-      <use xlink:href="#Cambria-42" transform="translate(266.742188 0)"/>
+      <use xlink:href="#Cambria-2c" x="44.037109"/>
+      <use xlink:href="#Cambria-20" x="64.544922"/>
+      <use xlink:href="#Cambria-44" x="86.566406"/>
+      <use xlink:href="#Cambria-46" x="152.728516"/>
+      <use xlink:href="#Cambria-56" x="206.390625"/>
+      <use xlink:href="#Cambria-42" x="266.742188"/>
      </g>
     </g>
     <g id="line2d_32">
-     <path d="M 163.475625 113.13 
-L 177.475625 113.13 
-L 191.475625 113.13 
+     <path d="M 163.505625 113.13 
+L 177.505625 113.13 
+L 191.505625 113.13 
 " style="fill: none; stroke: #f7e425; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_17">
      <!-- DFBA -->
-     <g transform="translate(202.675625 118.03) scale(0.14 -0.14)">
+     <g transform="translate(202.705625 118.03) scale(0.14 -0.14)">
       <defs>
        <path id="Cambria-41" d="M 2488 0 
 L 2488 153 
@@ -1884,256 +1884,256 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cambria-44"/>
-      <use xlink:href="#Cambria-46" transform="translate(66.162109 0)"/>
-      <use xlink:href="#Cambria-42" transform="translate(119.824219 0)"/>
-      <use xlink:href="#Cambria-41" transform="translate(179.707031 0)"/>
+      <use xlink:href="#Cambria-46" x="66.162109"/>
+      <use xlink:href="#Cambria-42" x="119.824219"/>
+      <use xlink:href="#Cambria-41" x="179.707031"/>
      </g>
     </g>
     <g id="line2d_33">
-     <path d="M 163.475625 132.87 
-L 177.475625 132.87 
-L 191.475625 132.87 
+     <path d="M 163.505625 132.87 
+L 177.505625 132.87 
+L 191.505625 132.87 
 " style="fill: none; stroke: #fb9f3a; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_18">
      <!-- DFBA -->
-     <g transform="translate(202.675625 137.77) scale(0.14 -0.14)">
+     <g transform="translate(202.705625 137.77) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-44"/>
-      <use xlink:href="#Cambria-46" transform="translate(66.162109 0)"/>
-      <use xlink:href="#Cambria-42" transform="translate(119.824219 0)"/>
-      <use xlink:href="#Cambria-41" transform="translate(179.707031 0)"/>
+      <use xlink:href="#Cambria-46" x="66.162109"/>
+      <use xlink:href="#Cambria-42" x="119.824219"/>
+      <use xlink:href="#Cambria-41" x="179.707031"/>
      </g>
     </g>
     <g id="line2d_34">
-     <path d="M 163.475625 152.61 
-L 177.475625 152.61 
-L 191.475625 152.61 
+     <path d="M 163.505625 152.61 
+L 177.505625 152.61 
+L 191.505625 152.61 
 " style="fill: none; stroke: #000000; stroke-opacity: 0.2; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_19">
      <!-- DFBA -->
-     <g transform="translate(202.675625 157.51) scale(0.14 -0.14)">
+     <g transform="translate(202.705625 157.51) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-44"/>
-      <use xlink:href="#Cambria-46" transform="translate(66.162109 0)"/>
-      <use xlink:href="#Cambria-42" transform="translate(119.824219 0)"/>
-      <use xlink:href="#Cambria-41" transform="translate(179.707031 0)"/>
+      <use xlink:href="#Cambria-46" x="66.162109"/>
+      <use xlink:href="#Cambria-42" x="119.824219"/>
+      <use xlink:href="#Cambria-41" x="179.707031"/>
      </g>
     </g>
    </g>
   </g>
   <g id="axes_2">
    <g id="patch_8">
-    <path d="M 455.196471 254.4 
+    <path d="M 455.226471 254.4 
 L 810.962941 254.4 
 L 810.962941 14.28 
-L 455.196471 14.28 
+L 455.226471 14.28 
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="matplotlib.axis_3">
     <g id="xtick_7">
      <g id="line2d_35">
-      <path d="M 471.367674 254.4 
-L 471.367674 14.28 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 471.39631 254.4 
+L 471.39631 14.28 
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_36">
       <g>
-       <use xlink:href="#m3e143d779a" x="471.367674" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="471.39631" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_20">
       <!-- 0.0 -->
-      <g transform="translate(460.866424 272.58) scale(0.16 -0.16)">
+      <g transform="translate(460.89506 272.58) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_8">
      <g id="line2d_37">
-      <path d="M 536.052487 254.4 
-L 536.052487 14.28 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 536.075668 254.4 
+L 536.075668 14.28 
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_38">
       <g>
-       <use xlink:href="#m3e143d779a" x="536.052487" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="536.075668" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_21">
       <!-- 0.2 -->
-      <g transform="translate(525.551237 272.58) scale(0.16 -0.16)">
+      <g transform="translate(525.574418 272.58) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_9">
      <g id="line2d_39">
-      <path d="M 600.737299 254.4 
-L 600.737299 14.28 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 600.755027 254.4 
+L 600.755027 14.28 
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_40">
       <g>
-       <use xlink:href="#m3e143d779a" x="600.737299" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="600.755027" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_22">
       <!-- 0.4 -->
-      <g transform="translate(590.236049 272.58) scale(0.16 -0.16)">
+      <g transform="translate(590.253777 272.58) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_10">
      <g id="line2d_41">
-      <path d="M 665.422112 254.4 
-L 665.422112 14.28 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 665.434385 254.4 
+L 665.434385 14.28 
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_42">
       <g>
-       <use xlink:href="#m3e143d779a" x="665.422112" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="665.434385" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_23">
       <!-- 0.6 -->
-      <g transform="translate(654.920862 272.58) scale(0.16 -0.16)">
+      <g transform="translate(654.933135 272.58) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_11">
      <g id="line2d_43">
-      <path d="M 730.106925 254.4 
-L 730.106925 14.28 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 730.113743 254.4 
+L 730.113743 14.28 
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_44">
       <g>
-       <use xlink:href="#m3e143d779a" x="730.106925" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="730.113743" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_24">
       <!-- 0.8 -->
-      <g transform="translate(719.605675 272.58) scale(0.16 -0.16)">
+      <g transform="translate(719.612493 272.58) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_12">
      <g id="line2d_45">
-      <path d="M 794.791738 254.4 
-L 794.791738 14.28 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 794.793102 254.4 
+L 794.793102 14.28 
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_46">
       <g>
-       <use xlink:href="#m3e143d779a" x="794.791738" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="794.793102" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_25">
       <!-- 1.0 -->
-      <g transform="translate(784.290488 272.58) scale(0.16 -0.16)">
+      <g transform="translate(784.291852 272.58) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="text_26">
      <!-- Time (h) -->
-     <g transform="translate(603.270956 291.15) scale(0.16 -0.16)">
+     <g transform="translate(603.285956 291.15) scale(0.16 -0.16)">
       <use xlink:href="#Cambria-54"/>
-      <use xlink:href="#Cambria-69" transform="translate(59.277344 0)"/>
-      <use xlink:href="#Cambria-6d" transform="translate(87.060547 0)"/>
-      <use xlink:href="#Cambria-65" transform="translate(170.263672 0)"/>
-      <use xlink:href="#Cambria-20" transform="translate(219.042969 0)"/>
-      <use xlink:href="#Cambria-28" transform="translate(241.064453 0)"/>
-      <use xlink:href="#Cambria-68" transform="translate(279.248047 0)"/>
-      <use xlink:href="#Cambria-29" transform="translate(334.423828 0)"/>
+      <use xlink:href="#Cambria-69" x="59.277344"/>
+      <use xlink:href="#Cambria-6d" x="87.060547"/>
+      <use xlink:href="#Cambria-65" x="170.263672"/>
+      <use xlink:href="#Cambria-20" x="219.042969"/>
+      <use xlink:href="#Cambria-28" x="241.064453"/>
+      <use xlink:href="#Cambria-68" x="279.248047"/>
+      <use xlink:href="#Cambria-29" x="334.423828"/>
      </g>
     </g>
    </g>
    <g id="matplotlib.axis_4">
     <g id="ytick_6">
      <g id="line2d_47">
-      <path d="M 455.196471 243.485455 
+      <path d="M 455.226471 243.485455 
 L 810.962941 243.485455 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_48">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="243.485455" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="243.485455" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_27">
       <!-- 0 -->
-      <g transform="translate(439.336471 249.075455) scale(0.16 -0.16)">
+      <g transform="translate(439.366471 249.075455) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-30"/>
       </g>
      </g>
     </g>
     <g id="ytick_7">
      <g id="line2d_49">
-      <path d="M 455.196471 183.16823 
+      <path d="M 455.226471 183.16823 
 L 810.962941 183.16823 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_50">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="183.16823" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="183.16823" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_28">
       <!-- 1 -->
-      <g transform="translate(439.336471 188.75823) scale(0.16 -0.16)">
+      <g transform="translate(439.366471 188.75823) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-31"/>
       </g>
      </g>
     </g>
     <g id="ytick_8">
      <g id="line2d_51">
-      <path d="M 455.196471 122.851005 
+      <path d="M 455.226471 122.851005 
 L 810.962941 122.851005 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_52">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="122.851005" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="122.851005" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_29">
       <!-- 2 -->
-      <g transform="translate(439.336471 128.441005) scale(0.16 -0.16)">
+      <g transform="translate(439.366471 128.441005) scale(0.16 -0.16)">
        <use xlink:href="#Cambria-32"/>
       </g>
      </g>
     </g>
     <g id="ytick_9">
      <g id="line2d_53">
-      <path d="M 455.196471 62.53378 
+      <path d="M 455.226471 62.53378 
 L 810.962941 62.53378 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_54">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="62.53378" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="62.53378" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_30">
       <!-- 3 -->
-      <g transform="translate(439.336471 68.12378) scale(0.16 -0.16)">
+      <g transform="translate(439.366471 68.12378) scale(0.16 -0.16)">
        <defs>
         <path id="Cambria-33" d="M 497 3381 
 L 497 3975 
@@ -2182,7 +2182,7 @@ z
     </g>
     <g id="text_31">
      <!-- Null-space basis weight -->
-     <g transform="translate(431.843971 214.72625) rotate(-90) scale(0.16 -0.16)">
+     <g transform="translate(431.873971 214.72625) rotate(-90) scale(0.16 -0.16)">
       <defs>
        <path id="Cambria-4e" d="M 2888 1691 
 Q 3000 1503 3076 1362 
@@ -2474,99 +2474,99 @@ z
 " transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#Cambria-4e"/>
-      <use xlink:href="#Cambria-75" transform="translate(68.066406 0)"/>
-      <use xlink:href="#Cambria-6c" transform="translate(123.291016 0)"/>
-      <use xlink:href="#Cambria-6c" transform="translate(150.439453 0)"/>
-      <use xlink:href="#Cambria-2d" transform="translate(177.587891 0)"/>
-      <use xlink:href="#Cambria-73" transform="translate(210.791016 0)"/>
-      <use xlink:href="#Cambria-70" transform="translate(253.759766 0)"/>
-      <use xlink:href="#Cambria-61" transform="translate(309.375 0)"/>
-      <use xlink:href="#Cambria-63" transform="translate(358.203125 0)"/>
-      <use xlink:href="#Cambria-65" transform="translate(402.294922 0)"/>
-      <use xlink:href="#Cambria-20" transform="translate(451.074219 0)"/>
-      <use xlink:href="#Cambria-62" transform="translate(473.095703 0)"/>
-      <use xlink:href="#Cambria-61" transform="translate(527.832031 0)"/>
-      <use xlink:href="#Cambria-73" transform="translate(576.660156 0)"/>
-      <use xlink:href="#Cambria-69" transform="translate(619.628906 0)"/>
-      <use xlink:href="#Cambria-73" transform="translate(647.412109 0)"/>
-      <use xlink:href="#Cambria-20" transform="translate(690.380859 0)"/>
-      <use xlink:href="#Cambria-77" transform="translate(712.402344 0)"/>
-      <use xlink:href="#Cambria-65" transform="translate(789.84375 0)"/>
-      <use xlink:href="#Cambria-69" transform="translate(838.623047 0)"/>
-      <use xlink:href="#Cambria-67" transform="translate(866.40625 0)"/>
-      <use xlink:href="#Cambria-68" transform="translate(915.820312 0)"/>
-      <use xlink:href="#Cambria-74" transform="translate(970.996094 0)"/>
+      <use xlink:href="#Cambria-75" x="68.066406"/>
+      <use xlink:href="#Cambria-6c" x="123.291016"/>
+      <use xlink:href="#Cambria-6c" x="150.439453"/>
+      <use xlink:href="#Cambria-2d" x="177.587891"/>
+      <use xlink:href="#Cambria-73" x="210.791016"/>
+      <use xlink:href="#Cambria-70" x="253.759766"/>
+      <use xlink:href="#Cambria-61" x="309.375"/>
+      <use xlink:href="#Cambria-63" x="358.203125"/>
+      <use xlink:href="#Cambria-65" x="402.294922"/>
+      <use xlink:href="#Cambria-20" x="451.074219"/>
+      <use xlink:href="#Cambria-62" x="473.095703"/>
+      <use xlink:href="#Cambria-61" x="527.832031"/>
+      <use xlink:href="#Cambria-73" x="576.660156"/>
+      <use xlink:href="#Cambria-69" x="619.628906"/>
+      <use xlink:href="#Cambria-73" x="647.412109"/>
+      <use xlink:href="#Cambria-20" x="690.380859"/>
+      <use xlink:href="#Cambria-77" x="712.402344"/>
+      <use xlink:href="#Cambria-65" x="789.84375"/>
+      <use xlink:href="#Cambria-69" x="838.623047"/>
+      <use xlink:href="#Cambria-67" x="866.40625"/>
+      <use xlink:href="#Cambria-68" x="915.820312"/>
+      <use xlink:href="#Cambria-74" x="970.996094"/>
      </g>
     </g>
    </g>
    <g id="line2d_55">
-    <path d="M 471.367674 25.194545 
-L 520.901089 25.593129 
-L 556.837096 26.093523 
-L 584.35566 26.688929 
-L 606.046764 27.369498 
-L 623.852893 28.143063 
-L 638.421545 28.98982 
-L 650.723962 29.921221 
-L 661.083892 30.920416 
-L 670.14883 32.016937 
-L 677.59503 33.129937 
-L 684.393734 34.361659 
-L 690.221195 35.632997 
-L 695.40116 36.978452 
-L 699.933629 38.367162 
-L 704.142351 39.879659 
-L 708.027324 41.516574 
-L 711.58855 43.265508 
-L 714.826028 45.111755 
-L 717.739759 47.030109 
-L 720.329741 48.984262 
-L 722.919724 51.210488 
-L 725.185958 53.448021 
-L 727.452193 55.997432 
-L 729.718428 58.921241 
-L 731.660915 61.784667 
-L 733.603402 65.043065 
-L 735.545888 68.773811 
-L 737.488375 73.073973 
-L 739.430862 78.019061 
-L 741.049601 82.794207 
-L 742.66834 88.229631 
-L 744.287079 94.4317 
-L 745.905818 101.518076 
-L 747.848305 111.229496 
-L 749.467044 120.648461 
-L 751.085783 131.259268 
-L 753.02827 145.501331 
-L 754.970757 160.964367 
-L 755.942001 169.377521 
-L 759.503226 197.905965 
-L 761.121966 208.658092 
-L 762.416957 215.916152 
-L 763.711948 221.946826 
-L 765.006939 226.995904 
-L 766.301931 231.022432 
-L 767.596922 234.200551 
-L 768.568165 236.046585 
-L 769.539409 237.524335 
-L 770.8344 239.091664 
-L 772.129391 240.263543 
-L 773.100635 240.936577 
-L 773.74813 241.190796 
-L 774.071878 243.485455 
-L 794.791738 243.485455 
-L 794.791738 243.485455 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #9c179e; stroke-width: 4; stroke-linecap: square"/>
+    <path d="M 471.39631 25.194545 
+L 520.925548 25.593129 
+L 556.858525 26.093523 
+L 584.374769 26.688929 
+L 606.064043 27.369498 
+L 623.868671 28.143063 
+L 638.436094 28.98982 
+L 650.737474 29.921221 
+L 661.09653 30.920416 
+L 670.160705 32.016937 
+L 677.606276 33.129937 
+L 684.404407 34.361659 
+L 690.231376 35.632997 
+L 695.410904 36.978452 
+L 699.942992 38.367162 
+L 704.151358 39.879659 
+L 708.036004 41.516574 
+L 711.59693 43.265508 
+L 714.834135 45.111755 
+L 717.74762 47.030109 
+L 720.337384 48.984262 
+L 722.927148 51.210488 
+L 725.193192 53.448021 
+L 727.459235 55.997432 
+L 729.725279 58.921241 
+L 731.667602 61.784667 
+L 733.609925 65.043065 
+L 735.552248 68.773811 
+L 737.494571 73.073973 
+L 739.436894 78.019061 
+L 741.055497 82.794207 
+L 742.674099 88.229631 
+L 744.292702 94.4317 
+L 745.911304 101.518076 
+L 747.853627 111.229496 
+L 749.47223 120.648461 
+L 751.090832 131.259268 
+L 753.033156 145.501331 
+L 754.975479 160.964367 
+L 755.94664 169.377521 
+L 759.507566 197.905965 
+L 761.126168 208.658092 
+L 762.42105 215.916152 
+L 763.715932 221.946826 
+L 765.010815 226.995904 
+L 766.305697 231.022432 
+L 767.600579 234.200551 
+L 768.57174 236.046585 
+L 769.542902 237.524335 
+L 770.837784 239.091664 
+L 772.132666 240.263543 
+L 773.103827 240.936577 
+L 773.751268 241.190796 
+L 774.074989 243.485455 
+L 794.793102 243.485455 
+L 794.793102 243.485455 
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #9c179e; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="line2d_56">
-    <path d="M 471.367674 243.485455 
-L 794.791738 243.485455 
-L 794.791738 243.485455 
-" clip-path="url(#p8f8d899074)" style="fill: none; stroke: #fb9f3a; stroke-width: 4; stroke-linecap: square"/>
+    <path d="M 471.39631 243.485455 
+L 794.793102 243.485455 
+L 794.793102 243.485455 
+" clip-path="url(#pe8a5bf2493)" style="fill: none; stroke: #fb9f3a; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="patch_9">
-    <path d="M 455.196471 254.4 
-L 455.196471 14.28 
+    <path d="M 455.226471 254.4 
+L 455.226471 14.28 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_10">
@@ -2575,12 +2575,12 @@ L 810.962941 14.28
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_11">
-    <path d="M 455.196471 254.4 
+    <path d="M 455.226471 254.4 
 L 810.962941 254.4 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_12">
-    <path d="M 455.196471 14.28 
+    <path d="M 455.226471 14.28 
 L 810.962941 14.28 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
@@ -2701,10 +2701,10 @@ z
   </g>
   <g id="axes_3">
    <g id="patch_14">
-    <path d="M 856.252941 254.4 
+    <path d="M 856.282941 254.4 
 L 1212.019412 254.4 
 L 1212.019412 14.28 
-L 856.252941 14.28 
+L 856.282941 14.28 
 z
 " style="fill: #ffffff"/>
    </g>
@@ -2712,90 +2712,90 @@ z
     <g id="xtick_13">
      <g id="line2d_59">
       <g>
-       <use xlink:href="#m3e143d779a" x="856.252941" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="856.282941" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_34">
       <!-- 0.0 -->
-      <g transform="translate(849.68966 268.3875) scale(0.1 -0.1)">
+      <g transform="translate(849.71966 268.3875) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_14">
      <g id="line2d_60">
       <g>
-       <use xlink:href="#m3e143d779a" x="927.406235" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="927.430235" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_35">
       <!-- 0.2 -->
-      <g transform="translate(920.842954 268.3875) scale(0.1 -0.1)">
+      <g transform="translate(920.866954 268.3875) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_15">
      <g id="line2d_61">
       <g>
-       <use xlink:href="#m3e143d779a" x="998.559529" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="998.577529" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_36">
       <!-- 0.4 -->
-      <g transform="translate(991.996248 268.3875) scale(0.1 -0.1)">
+      <g transform="translate(992.014248 268.3875) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_16">
      <g id="line2d_62">
       <g>
-       <use xlink:href="#m3e143d779a" x="1069.712824" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="1069.724824" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_37">
       <!-- 0.6 -->
-      <g transform="translate(1063.149542 268.3875) scale(0.1 -0.1)">
+      <g transform="translate(1063.161542 268.3875) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_17">
      <g id="line2d_63">
       <g>
-       <use xlink:href="#m3e143d779a" x="1140.866118" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="1140.872118" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_38">
       <!-- 0.8 -->
-      <g transform="translate(1134.302836 268.3875) scale(0.1 -0.1)">
+      <g transform="translate(1134.308836 268.3875) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_18">
      <g id="line2d_64">
       <g>
-       <use xlink:href="#m3e143d779a" x="1212.019412" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="1212.019412" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_39">
       <!-- 1.0 -->
       <g transform="translate(1205.456131 268.3875) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
@@ -2804,97 +2804,97 @@ z
     <g id="ytick_10">
      <g id="line2d_65">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="254.4" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_40">
       <!-- 0.0 -->
-      <g transform="translate(836.126379 257.89375) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 257.89375) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_11">
      <g id="line2d_66">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="206.376" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="206.376" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_41">
       <!-- 0.2 -->
-      <g transform="translate(836.126379 209.86975) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 209.86975) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_12">
      <g id="line2d_67">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="158.352" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="158.352" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_42">
       <!-- 0.4 -->
-      <g transform="translate(836.126379 161.84575) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 161.84575) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_13">
      <g id="line2d_68">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="110.328" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="110.328" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_43">
       <!-- 0.6 -->
-      <g transform="translate(836.126379 113.82175) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 113.82175) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_14">
      <g id="line2d_69">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="62.304" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="62.304" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_44">
       <!-- 0.8 -->
-      <g transform="translate(836.126379 65.79775) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 65.79775) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_15">
      <g id="line2d_70">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="14.28" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="14.28" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_45">
       <!-- 1.0 -->
-      <g transform="translate(836.126379 17.77375) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 17.77375) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
    </g>
    <g id="patch_15">
-    <path d="M 856.252941 254.4 
-L 856.252941 14.28 
+    <path d="M 856.282941 254.4 
+L 856.282941 14.28 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_16">
@@ -2903,50 +2903,50 @@ L 1212.019412 14.28
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_17">
-    <path d="M 856.252941 254.4 
+    <path d="M 856.282941 254.4 
 L 1212.019412 254.4 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_18">
-    <path d="M 856.252941 14.28 
+    <path d="M 856.282941 14.28 
 L 1212.019412 14.28 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="legend_3">
     <g id="patch_19">
-     <path d="M 1232.607735 182.364 
-L 1285.405235 182.364 
-Q 1288.205235 182.364 1288.205235 179.564 
-L 1288.205235 62.524 
-Q 1288.205235 59.724 1285.405235 59.724 
-L 1232.607735 59.724 
-Q 1229.807735 59.724 1229.807735 62.524 
-L 1229.807735 179.564 
-Q 1229.807735 182.364 1232.607735 182.364 
+     <path d="M 1232.606235 182.364 
+L 1285.403735 182.364 
+Q 1288.203735 182.364 1288.203735 179.564 
+L 1288.203735 62.524 
+Q 1288.203735 59.724 1285.403735 59.724 
+L 1232.606235 59.724 
+Q 1229.806235 59.724 1229.806235 62.524 
+L 1229.806235 179.564 
+Q 1229.806235 182.364 1232.606235 182.364 
 z
 " style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
     </g>
     <g id="line2d_71">
-     <path d="M 1235.407735 70.224 
-L 1249.407735 70.224 
-L 1263.407735 70.224 
+     <path d="M 1235.406235 70.224 
+L 1249.406235 70.224 
+L 1263.406235 70.224 
 " style="fill: none; stroke: #46039f; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_46">
      <!-- X -->
-     <g transform="translate(1274.607735 75.124) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 75.124) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-58"/>
      </g>
     </g>
     <g id="line2d_72">
-     <path d="M 1235.407735 89.964 
-L 1249.407735 89.964 
-L 1263.407735 89.964 
+     <path d="M 1235.406235 89.964 
+L 1249.406235 89.964 
+L 1263.406235 89.964 
 " style="fill: none; stroke: #9c179e; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_47">
      <!-- x -->
-     <g transform="translate(1274.607735 94.864) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 94.864) scale(0.14 -0.14)">
       <defs>
        <path id="Cambria-78" d="M 1625 1803 
 L 2031 2319 
@@ -3000,50 +3000,50 @@ z
      </g>
     </g>
     <g id="line2d_73">
-     <path d="M 1235.407735 109.704 
-L 1249.407735 109.704 
-L 1263.407735 109.704 
+     <path d="M 1235.406235 109.704 
+L 1249.406235 109.704 
+L 1263.406235 109.704 
 " style="fill: none; stroke: #000000; stroke-opacity: 0.4; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_48">
      <!-- s -->
-     <g transform="translate(1274.607735 114.604) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 114.604) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-73"/>
      </g>
     </g>
     <g id="line2d_74">
-     <path d="M 1235.407735 129.444 
-L 1249.407735 129.444 
-L 1263.407735 129.444 
+     <path d="M 1235.406235 129.444 
+L 1249.406235 129.444 
+L 1263.406235 129.444 
 " style="fill: none; stroke: #f7e425; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_49">
      <!-- s -->
-     <g transform="translate(1274.607735 134.344) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 134.344) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-73"/>
      </g>
     </g>
     <g id="line2d_75">
-     <path d="M 1235.407735 149.184 
-L 1249.407735 149.184 
-L 1263.407735 149.184 
+     <path d="M 1235.406235 149.184 
+L 1249.406235 149.184 
+L 1263.406235 149.184 
 " style="fill: none; stroke: #fb9f3a; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_50">
      <!-- P -->
-     <g transform="translate(1274.607735 154.084) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 154.084) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-50"/>
      </g>
     </g>
     <g id="line2d_76">
-     <path d="M 1235.407735 168.924 
-L 1249.407735 168.924 
-L 1263.407735 168.924 
+     <path d="M 1235.406235 168.924 
+L 1249.406235 168.924 
+L 1263.406235 168.924 
 " style="fill: none; stroke: #000000; stroke-opacity: 0.2; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_51">
      <!-- p -->
-     <g transform="translate(1274.607735 173.824) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 173.824) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-70"/>
      </g>
     </g>
@@ -3051,10 +3051,10 @@ L 1263.407735 168.924
   </g>
   <g id="axes_4">
    <g id="patch_20">
-    <path d="M 54.14 549.08 
+    <path d="M 54.17 549.08 
 L 409.906471 549.08 
 L 409.906471 308.96 
-L 54.14 308.96 
+L 54.17 308.96 
 z
 " style="fill: #ffffff"/>
    </g>
@@ -3062,90 +3062,90 @@ z
     <g id="xtick_19">
      <g id="line2d_77">
       <g>
-       <use xlink:href="#m3e143d779a" x="54.14" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="54.17" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_52">
       <!-- 0.0 -->
-      <g transform="translate(47.576719 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(47.606719 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_20">
      <g id="line2d_78">
       <g>
-       <use xlink:href="#m3e143d779a" x="125.293294" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="125.317294" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_53">
       <!-- 0.2 -->
-      <g transform="translate(118.730013 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(118.754013 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_21">
      <g id="line2d_79">
       <g>
-       <use xlink:href="#m3e143d779a" x="196.446588" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="196.464588" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_54">
       <!-- 0.4 -->
-      <g transform="translate(189.883307 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(189.901307 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_22">
      <g id="line2d_80">
       <g>
-       <use xlink:href="#m3e143d779a" x="267.599882" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="267.611882" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_55">
       <!-- 0.6 -->
-      <g transform="translate(261.036601 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(261.048601 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_23">
      <g id="line2d_81">
       <g>
-       <use xlink:href="#m3e143d779a" x="338.753176" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="338.759176" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_56">
       <!-- 0.8 -->
-      <g transform="translate(332.189895 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(332.195895 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_24">
      <g id="line2d_82">
       <g>
-       <use xlink:href="#m3e143d779a" x="409.906471" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="409.906471" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_57">
       <!-- 1.0 -->
       <g transform="translate(403.343189 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
@@ -3154,97 +3154,97 @@ z
     <g id="ytick_16">
      <g id="line2d_83">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_58">
       <!-- 0.0 -->
-      <g transform="translate(34.013437 552.57375) scale(0.1 -0.1)">
+      <g transform="translate(34.043437 552.57375) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_17">
      <g id="line2d_84">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="501.056" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="501.056" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_59">
       <!-- 0.2 -->
-      <g transform="translate(34.013437 504.54975) scale(0.1 -0.1)">
+      <g transform="translate(34.043437 504.54975) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_18">
      <g id="line2d_85">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="453.032" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="453.032" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_60">
       <!-- 0.4 -->
-      <g transform="translate(34.013437 456.52575) scale(0.1 -0.1)">
+      <g transform="translate(34.043437 456.52575) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_19">
      <g id="line2d_86">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="405.008" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="405.008" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_61">
       <!-- 0.6 -->
-      <g transform="translate(34.013437 408.50175) scale(0.1 -0.1)">
+      <g transform="translate(34.043437 408.50175) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_20">
      <g id="line2d_87">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="356.984" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="356.984" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_62">
       <!-- 0.8 -->
-      <g transform="translate(34.013437 360.47775) scale(0.1 -0.1)">
+      <g transform="translate(34.043437 360.47775) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_21">
      <g id="line2d_88">
       <g>
-       <use xlink:href="#maae5e25a9b" x="54.14" y="308.96" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="54.17" y="308.96" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_63">
       <!-- 1.0 -->
-      <g transform="translate(34.013437 312.45375) scale(0.1 -0.1)">
+      <g transform="translate(34.043437 312.45375) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
    </g>
    <g id="patch_21">
-    <path d="M 54.14 549.08 
-L 54.14 308.96 
+    <path d="M 54.17 549.08 
+L 54.17 308.96 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_22">
@@ -3253,22 +3253,22 @@ L 409.906471 308.96
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_23">
-    <path d="M 54.14 549.08 
+    <path d="M 54.17 549.08 
 L 409.906471 549.08 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_24">
-    <path d="M 54.14 308.96 
+    <path d="M 54.17 308.96 
 L 409.906471 308.96 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
   </g>
   <g id="axes_5">
    <g id="patch_25">
-    <path d="M 455.196471 549.08 
+    <path d="M 455.226471 549.08 
 L 810.962941 549.08 
 L 810.962941 308.96 
-L 455.196471 308.96 
+L 455.226471 308.96 
 z
 " style="fill: #ffffff"/>
    </g>
@@ -3276,90 +3276,90 @@ z
     <g id="xtick_25">
      <g id="line2d_89">
       <g>
-       <use xlink:href="#m3e143d779a" x="455.196471" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="455.226471" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_64">
       <!-- 0.0 -->
-      <g transform="translate(448.633189 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(448.663189 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_26">
      <g id="line2d_90">
       <g>
-       <use xlink:href="#m3e143d779a" x="526.349765" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="526.373765" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_65">
       <!-- 0.2 -->
-      <g transform="translate(519.786483 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(519.810483 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_27">
      <g id="line2d_91">
       <g>
-       <use xlink:href="#m3e143d779a" x="597.503059" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="597.521059" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_66">
       <!-- 0.4 -->
-      <g transform="translate(590.939778 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(590.957778 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_28">
      <g id="line2d_92">
       <g>
-       <use xlink:href="#m3e143d779a" x="668.656353" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="668.668353" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_67">
       <!-- 0.6 -->
-      <g transform="translate(662.093072 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(662.105072 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_29">
      <g id="line2d_93">
       <g>
-       <use xlink:href="#m3e143d779a" x="739.809647" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="739.815647" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_68">
       <!-- 0.8 -->
-      <g transform="translate(733.246366 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(733.252366 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_30">
      <g id="line2d_94">
       <g>
-       <use xlink:href="#m3e143d779a" x="810.962941" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="810.962941" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_69">
       <!-- 1.0 -->
       <g transform="translate(804.39966 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
@@ -3368,97 +3368,97 @@ z
     <g id="ytick_22">
      <g id="line2d_95">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_70">
       <!-- 0.0 -->
-      <g transform="translate(435.069908 552.57375) scale(0.1 -0.1)">
+      <g transform="translate(435.099908 552.57375) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_23">
      <g id="line2d_96">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="501.056" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="501.056" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_71">
       <!-- 0.2 -->
-      <g transform="translate(435.069908 504.54975) scale(0.1 -0.1)">
+      <g transform="translate(435.099908 504.54975) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_24">
      <g id="line2d_97">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="453.032" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="453.032" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_72">
       <!-- 0.4 -->
-      <g transform="translate(435.069908 456.52575) scale(0.1 -0.1)">
+      <g transform="translate(435.099908 456.52575) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_25">
      <g id="line2d_98">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="405.008" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="405.008" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_73">
       <!-- 0.6 -->
-      <g transform="translate(435.069908 408.50175) scale(0.1 -0.1)">
+      <g transform="translate(435.099908 408.50175) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_26">
      <g id="line2d_99">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="356.984" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="356.984" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_74">
       <!-- 0.8 -->
-      <g transform="translate(435.069908 360.47775) scale(0.1 -0.1)">
+      <g transform="translate(435.099908 360.47775) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_27">
      <g id="line2d_100">
       <g>
-       <use xlink:href="#maae5e25a9b" x="455.196471" y="308.96" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="455.226471" y="308.96" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_75">
       <!-- 1.0 -->
-      <g transform="translate(435.069908 312.45375) scale(0.1 -0.1)">
+      <g transform="translate(435.099908 312.45375) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
    </g>
    <g id="patch_26">
-    <path d="M 455.196471 549.08 
-L 455.196471 308.96 
+    <path d="M 455.226471 549.08 
+L 455.226471 308.96 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_27">
@@ -3467,22 +3467,22 @@ L 810.962941 308.96
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_28">
-    <path d="M 455.196471 549.08 
+    <path d="M 455.226471 549.08 
 L 810.962941 549.08 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_29">
-    <path d="M 455.196471 308.96 
+    <path d="M 455.226471 308.96 
 L 810.962941 308.96 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
   </g>
   <g id="axes_6">
    <g id="patch_30">
-    <path d="M 856.252941 549.08 
+    <path d="M 856.282941 549.08 
 L 1212.019412 549.08 
 L 1212.019412 308.96 
-L 856.252941 308.96 
+L 856.282941 308.96 
 z
 " style="fill: #ffffff"/>
    </g>
@@ -3490,90 +3490,90 @@ z
     <g id="xtick_31">
      <g id="line2d_101">
       <g>
-       <use xlink:href="#m3e143d779a" x="856.252941" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="856.282941" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_76">
       <!-- 0.0 -->
-      <g transform="translate(849.68966 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(849.71966 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_32">
      <g id="line2d_102">
       <g>
-       <use xlink:href="#m3e143d779a" x="927.406235" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="927.430235" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_77">
       <!-- 0.2 -->
-      <g transform="translate(920.842954 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(920.866954 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_33">
      <g id="line2d_103">
       <g>
-       <use xlink:href="#m3e143d779a" x="998.559529" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="998.577529" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_78">
       <!-- 0.4 -->
-      <g transform="translate(991.996248 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(992.014248 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_34">
      <g id="line2d_104">
       <g>
-       <use xlink:href="#m3e143d779a" x="1069.712824" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="1069.724824" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_79">
       <!-- 0.6 -->
-      <g transform="translate(1063.149542 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(1063.161542 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_35">
      <g id="line2d_105">
       <g>
-       <use xlink:href="#m3e143d779a" x="1140.866118" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="1140.872118" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_80">
       <!-- 0.8 -->
-      <g transform="translate(1134.302836 563.0675) scale(0.1 -0.1)">
+      <g transform="translate(1134.308836 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="xtick_36">
      <g id="line2d_106">
       <g>
-       <use xlink:href="#m3e143d779a" x="1212.019412" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#m858af05068" x="1212.019412" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_81">
       <!-- 1.0 -->
       <g transform="translate(1205.456131 563.0675) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
@@ -3582,97 +3582,97 @@ z
     <g id="ytick_28">
      <g id="line2d_107">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="549.08" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_82">
       <!-- 0.0 -->
-      <g transform="translate(836.126379 552.57375) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 552.57375) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_29">
      <g id="line2d_108">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="501.056" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="501.056" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_83">
       <!-- 0.2 -->
-      <g transform="translate(836.126379 504.54975) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 504.54975) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-32" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-32" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_30">
      <g id="line2d_109">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="453.032" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="453.032" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_84">
       <!-- 0.4 -->
-      <g transform="translate(836.126379 456.52575) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 456.52575) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-34" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-34" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_31">
      <g id="line2d_110">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="405.008" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="405.008" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_85">
       <!-- 0.6 -->
-      <g transform="translate(836.126379 408.50175) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 408.50175) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-36" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-36" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_32">
      <g id="line2d_111">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="356.984" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="356.984" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_86">
       <!-- 0.8 -->
-      <g transform="translate(836.126379 360.47775) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 360.47775) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-30"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-38" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-38" x="75.878906"/>
       </g>
      </g>
     </g>
     <g id="ytick_33">
      <g id="line2d_112">
       <g>
-       <use xlink:href="#maae5e25a9b" x="856.252941" y="308.96" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#me1e5eb6264" x="856.282941" y="308.96" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_87">
       <!-- 1.0 -->
-      <g transform="translate(836.126379 312.45375) scale(0.1 -0.1)">
+      <g transform="translate(836.156379 312.45375) scale(0.1 -0.1)">
        <use xlink:href="#Cambria-31"/>
-       <use xlink:href="#Cambria-2e" transform="translate(55.371094 0)"/>
-       <use xlink:href="#Cambria-30" transform="translate(75.878906 0)"/>
+       <use xlink:href="#Cambria-2e" x="55.371094"/>
+       <use xlink:href="#Cambria-30" x="75.878906"/>
       </g>
      </g>
     </g>
    </g>
    <g id="patch_31">
-    <path d="M 856.252941 549.08 
-L 856.252941 308.96 
+    <path d="M 856.282941 549.08 
+L 856.282941 308.96 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_32">
@@ -3681,98 +3681,98 @@ L 1212.019412 308.96
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_33">
-    <path d="M 856.252941 549.08 
+    <path d="M 856.282941 549.08 
 L 1212.019412 549.08 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_34">
-    <path d="M 856.252941 308.96 
+    <path d="M 856.282941 308.96 
 L 1212.019412 308.96 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="legend_4">
     <g id="patch_35">
-     <path d="M 1232.607735 477.044 
-L 1285.405235 477.044 
-Q 1288.205235 477.044 1288.205235 474.244 
-L 1288.205235 357.204 
-Q 1288.205235 354.404 1285.405235 354.404 
-L 1232.607735 354.404 
-Q 1229.807735 354.404 1229.807735 357.204 
-L 1229.807735 474.244 
-Q 1229.807735 477.044 1232.607735 477.044 
+     <path d="M 1232.606235 477.044 
+L 1285.403735 477.044 
+Q 1288.203735 477.044 1288.203735 474.244 
+L 1288.203735 357.204 
+Q 1288.203735 354.404 1285.403735 354.404 
+L 1232.606235 354.404 
+Q 1229.806235 354.404 1229.806235 357.204 
+L 1229.806235 474.244 
+Q 1229.806235 477.044 1232.606235 477.044 
 z
 " style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
     </g>
     <g id="line2d_113">
-     <path d="M 1235.407735 364.904 
-L 1249.407735 364.904 
-L 1263.407735 364.904 
+     <path d="M 1235.406235 364.904 
+L 1249.406235 364.904 
+L 1263.406235 364.904 
 " style="fill: none; stroke: #46039f; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_88">
      <!-- X -->
-     <g transform="translate(1274.607735 369.804) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 369.804) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-58"/>
      </g>
     </g>
     <g id="line2d_114">
-     <path d="M 1235.407735 384.644 
-L 1249.407735 384.644 
-L 1263.407735 384.644 
+     <path d="M 1235.406235 384.644 
+L 1249.406235 384.644 
+L 1263.406235 384.644 
 " style="fill: none; stroke: #9c179e; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_89">
      <!-- x -->
-     <g transform="translate(1274.607735 389.544) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 389.544) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-78"/>
      </g>
     </g>
     <g id="line2d_115">
-     <path d="M 1235.407735 404.384 
-L 1249.407735 404.384 
-L 1263.407735 404.384 
+     <path d="M 1235.406235 404.384 
+L 1249.406235 404.384 
+L 1263.406235 404.384 
 " style="fill: none; stroke: #000000; stroke-opacity: 0.4; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_90">
      <!-- s -->
-     <g transform="translate(1274.607735 409.284) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 409.284) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-73"/>
      </g>
     </g>
     <g id="line2d_116">
-     <path d="M 1235.407735 424.124 
-L 1249.407735 424.124 
-L 1263.407735 424.124 
+     <path d="M 1235.406235 424.124 
+L 1249.406235 424.124 
+L 1263.406235 424.124 
 " style="fill: none; stroke: #f7e425; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_91">
      <!-- s -->
-     <g transform="translate(1274.607735 429.024) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 429.024) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-73"/>
      </g>
     </g>
     <g id="line2d_117">
-     <path d="M 1235.407735 443.864 
-L 1249.407735 443.864 
-L 1263.407735 443.864 
+     <path d="M 1235.406235 443.864 
+L 1249.406235 443.864 
+L 1263.406235 443.864 
 " style="fill: none; stroke: #fb9f3a; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_92">
      <!-- P -->
-     <g transform="translate(1274.607735 448.764) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 448.764) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-50"/>
      </g>
     </g>
     <g id="line2d_118">
-     <path d="M 1235.407735 463.604 
-L 1249.407735 463.604 
-L 1263.407735 463.604 
+     <path d="M 1235.406235 463.604 
+L 1249.406235 463.604 
+L 1263.406235 463.604 
 " style="fill: none; stroke: #000000; stroke-opacity: 0.2; stroke-width: 4; stroke-linecap: square"/>
     </g>
     <g id="text_93">
      <!-- p -->
-     <g transform="translate(1274.607735 468.504) scale(0.14 -0.14)">
+     <g transform="translate(1274.606235 468.504) scale(0.14 -0.14)">
       <use xlink:href="#Cambria-70"/>
      </g>
     </g>
@@ -3780,11 +3780,11 @@ L 1263.407735 463.604
   </g>
  </g>
  <defs>
-  <clipPath id="p642d8a813d">
-   <rect x="54.14" y="14.28" width="355.766471" height="240.12"/>
+  <clipPath id="p0e10247111">
+   <rect x="54.17" y="14.28" width="355.736471" height="240.12"/>
   </clipPath>
-  <clipPath id="p8f8d899074">
-   <rect x="455.196471" y="14.28" width="355.766471" height="240.12"/>
+  <clipPath id="pe8a5bf2493">
+   <rect x="455.226471" y="14.28" width="355.736471" height="240.12"/>
   </clipPath>
  </defs>
 </svg>

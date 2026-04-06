@@ -1,5 +1,14 @@
 function geneTable = detectactivegenes(model, act_rxns, namefile)  
-
+% --------------------------------------------------------------------
+% Detect active genes based on active reactions in a metabolic model
+% Inputs:
+%   model - COBRA model structure with fields 'genes' and 'grRules'
+%   act_rxns - vector of indices of active reactions
+%   namefile (optional) - base name for output CSV file (without extension)
+% Output:
+%   geneTable - table with columns 'GeneID' and 'Status' indicating active,
+%               ambiguous, or inactive genes
+% --------------------------------------------------------------------
     if nargin < 3
         namefile = '';
     end

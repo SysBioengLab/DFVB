@@ -1,10 +1,16 @@
 function [data_b, idx] = resampleAlignedWithReplacement(data_in, includeFirst)
-% Muestrea con reemplazo EXACTAMENTE las mismas filas para:
-%   - data_in.conc (todas las columnas)
+%---------------------------------------------------------------------------------
+% Performs bootstrap resampling with replacement of the same rows in all fields:
+%   - data_in.conc   (all columns)
 %   - data_in.t_exp
-% Parámetros:
-%   data_in      : struct con campos .conc [n x m], .t_exp [n x 1]
-%   includeFirst : si true, asegura que el índice 1 esté incluido.
+%
+% Inputs:
+%   data_in      : struct with fields .conc [n x m] and .t_exp [n x 1]
+%   includeFirst : if true, guarantees that index 1 appears in the sample
+% Outputs:
+%   data_b : struct with the same fields as data_in but with resampled rows
+%   idx    : indices of the selected rows (with replacement)
+%---------------------------------------------------------------------------------
     conc = data_in.conc;
     t    = data_in.t_exp(:);
     n    = size(conc,1);

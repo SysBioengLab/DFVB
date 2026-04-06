@@ -66,22 +66,22 @@ model = changeRxnBounds(model, model.rxns(index_rxns(6)), 1000, 'u'); % Lactato 
 model = changeRxnBounds(model, model.rxns(index_rxns(5)), 0, 'l'); % Citrato exchange
 model = changeRxnBounds(model, model.rxns(index_rxns(6)), 0, 'l'); % Lactato exchange
 
-%% Construct DFNA and DFBA models
+%% Construct DFVB and DFBA models
 N_sparse = sparseNull(model.S);
-model_DFNA = build_dCBA(model, N_sparse);
+model_DFVB = build_DFVB(model, N_sparse);
 
 %% Index reactions and metabolites
 
-bio_dfna  = find(startsWith(model_DFNA.rxns, model.rxns(index_rxns(1))));
-glc_dfna  = find(startsWith(model_DFNA.rxns, model.rxns(index_rxns(2))));
-o2_dfna   = find(startsWith(model_DFNA.rxns, model.rxns(index_rxns(end))));
-etoh_dfna = find(startsWith(model_DFNA.rxns, model.rxns(index_rxns(3))));
+bio_DFVB  = find(startsWith(model_DFVB.rxns, model.rxns(index_rxns(1))));
+glc_DFVB  = find(startsWith(model_DFVB.rxns, model.rxns(index_rxns(2))));
+o2_DFVB   = find(startsWith(model_DFVB.rxns, model.rxns(index_rxns(end))));
+etoh_DFVB = find(startsWith(model_DFVB.rxns, model.rxns(index_rxns(3))));
 
 %% Load Experimental data
 
 exp_data = readtable('Aerobic_data_sanchez_1.csv');
 
-%% DFNA execution: V1
+%% DFVB execution: V1
 
 %ODE configuration
 options   = odeset('AbsTol',1e-6, 'NonNegative',[1, 2, 3, 4 ,5 ,6]);  % Opciones del ODE
@@ -95,15 +95,15 @@ options   = odeset('AbsTol',1e-6, 'NonNegative',[1, 2, 3, 4 ,5 ,6]);  % Opciones
 % y0(6)      = exp_data.LAC(1);             % Initial PAN
 
 % Parameters
-index_N     = [bio_dfna, glc_dfna, o2_dfna, etoh_dfna];
+index_N     = [bio_DFVB, glc_DFVB, o2_DFVB, etoh_DFVB];
 
             %   v_glc  K_G  K_iE  f_etoh  f_gly  f_cit  f_lac  
 % theta       =  [15     1    1e6    1.7    4    2.5   3];
-alpha_dim   = size(model_DFNA.nullS,2);
+alpha_dim   = size(model_DFVB.nullS,2);
 t_span = [0, 11];
 % Simulate
 tic;
-[T_sol, Y_sol] = ode113(@dfna2fit_sanchez, t_span,y0,options,theta, model_DFNA, index_N, alpha_dim);
+[T_sol, Y_sol] = ode113(@DFVB2fit_sanchez, t_span,y0,options,theta, model_DFVB, index_N, alpha_dim);
 fprintf('\nCPU Time(s) = %.2f\n', toc)
 
 % Plot
@@ -113,7 +113,7 @@ hold on
 plot(T_sol, Y_sol(:,1))
 plot(exp_data.TIME, exp_data.X, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.')
+legend('DFVB', 'Exp.')
 ylabel('Concentration (g/L)')
 title('Biomass')
 
@@ -122,7 +122,7 @@ hold on
 plot(T_sol, Y_sol(:,2))
 plot(exp_data.TIME, exp_data.GLC, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.')
+legend('DFVB', 'Exp.')
 title('Glucose')
 ylabel('Concentration (g/L)')
 
@@ -131,7 +131,7 @@ hold on
 plot(T_sol, Y_sol(:,3))
 plot(exp_data.TIME, exp_data.ETOH, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.')
+legend('DFVB', 'Exp.')
 title('Ethanol')
 ylabel('Concentration (g/L)')
 % 
@@ -140,7 +140,7 @@ hold on
 plot(T_sol, Y_sol(:,4))
 plot(exp_data.TIME, exp_data.GLY, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.')
+legend('DFVB', 'Exp.')
 title('Glycerol')
 ylabel('Concentration (g/L)')
 
@@ -149,7 +149,7 @@ hold on
 plot(T_sol, Y_sol(:,5))
 plot(exp_data.TIME, exp_data.CIT, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.')
+legend('DFVB', 'Exp.')
 title('Citrate')
 ylabel('Concentration (g/L)')
 
@@ -158,13 +158,13 @@ hold on
 plot(T_sol, Y_sol(:,6))
 plot(exp_data.TIME, exp_data.LAC, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.')
+legend('DFVB', 'Exp.')
 title('Lactate')
 ylabel('Concentration (g/L)')
 
     %% Recuperar fluxes y alphas no forzado
 
-alpha_N = alpha_recovery_sanchez(T_sol,Y_sol,theta, model_DFNA, index_N, alpha_dim);
+alpha_N = alpha_recovery_sanchez(T_sol,Y_sol,theta, model_DFVB, index_N, alpha_dim);
 
 % NullS
 alpha_no_nulo_N = [];
@@ -176,15 +176,15 @@ end
 
 %% Reducir modelo
 inactivos_N     = setdiff(1:size(alpha_N,2), alpha_no_nulo_N);
-activos_N_con_1 = setdiff(1:size(model_DFNA.nullS,2),inactivos_N); % POS 1 NO SE PUEDE ELIMINAR -> COL 1
-activos_N       = setdiff(1:size(model_DFNA.nullS,2),[inactivos_N(2:end)]); % POS 1 NO SE PUEDE ELIMINAR -> COL 1
+activos_N_con_1 = setdiff(1:size(model_DFVB.nullS,2),inactivos_N); % POS 1 NO SE PUEDE ELIMINAR -> COL 1
+activos_N       = setdiff(1:size(model_DFVB.nullS,2),[inactivos_N(2:end)]); % POS 1 NO SE PUEDE ELIMINAR -> COL 1
 
-modelo_N_reducido_con_1   = build_dCBA(model,N_sparse(:,activos_N_con_1));
-modelo_N_reducido         = build_dCBA(model,N_sparse(:,activos_N));
+modelo_N_reducido_con_1   = build_DFVB(model,N_sparse(:,activos_N_con_1));
+modelo_N_reducido         = build_DFVB(model,N_sparse(:,activos_N));
 
 %% Análisis primera conversión
-exchanges_eliminados = model_DFNA.rxns(find(model_DFNA.nullS(:, inactivos_N(1))~=0));
-internas_eliminadas  = model_DFNA.intrxns(find(model_DFNA.intN(:, inactivos_N(1))~=0));
+exchanges_eliminados = model_DFVB.rxns(find(model_DFVB.nullS(:, inactivos_N(1))~=0));
+internas_eliminadas  = model_DFVB.intrxns(find(model_DFVB.intN(:, inactivos_N(1))~=0));
 total_rxns = [exchanges_eliminados; internas_eliminadas];
 
 rxn_names_eliminadas = cell(length(total_rxns),1);
@@ -199,18 +199,18 @@ Inactive_rxn_N        = [modelo_N_reducido.inac_ex; modelo_N_reducido.inac_int];
 Idx_inact_rxn_N       = findRxnIDs(model, Inactive_rxn_N);
 Idx_act_rxn_N         = setdiff(1:size(model.S,2) ,findRxnIDs(model, Inactive_rxn_N));
 Idx_inact_mets_N      = met_reduced(model, Idx_act_rxn_N);
-fprintf('\nMetabolitos eliminados con dCBA - SparseNull = %d\n', size(Idx_inact_mets_N,1))
-fprintf('\nReacciones eliminadas con dCBA - SparseNull = %d\n', size(modelo_N_reducido.inac_ex,1) + size(modelo_N_reducido.inac_int,1))
+fprintf('\nMetabolitos eliminados con DFVB - SparseNull = %d\n', size(Idx_inact_mets_N,1))
+fprintf('\nReacciones eliminadas con DFVB - SparseNull = %d\n', size(modelo_N_reducido.inac_ex,1) + size(modelo_N_reducido.inac_int,1))
 
 
 %% Index reactions and metabolites
 
-bio_dfna  = find(startsWith(modelo_N_reducido.rxns, model.rxns(index_rxns(1))));
-glc_dfna  = find(startsWith(modelo_N_reducido.rxns, model.rxns(index_rxns(2))));
-o2_dfna   = find(startsWith(modelo_N_reducido.rxns, model.rxns(index_rxns(end))));
-etoh_dfna = find(startsWith(modelo_N_reducido.rxns, model.rxns(index_rxns(3))));
+bio_DFVB  = find(startsWith(modelo_N_reducido.rxns, model.rxns(index_rxns(1))));
+glc_DFVB  = find(startsWith(modelo_N_reducido.rxns, model.rxns(index_rxns(2))));
+o2_DFVB   = find(startsWith(modelo_N_reducido.rxns, model.rxns(index_rxns(end))));
+etoh_DFVB = find(startsWith(modelo_N_reducido.rxns, model.rxns(index_rxns(3))));
 
-%% DFNA execution: V1
+%% DFVB execution: V1
 
 %ODE configuration
 options   = odeset('AbsTol',1e-6, 'NonNegative',[1, 2, 3, 4 ,5 ,6]);  % Opciones del ODE
@@ -224,7 +224,7 @@ options   = odeset('AbsTol',1e-6, 'NonNegative',[1, 2, 3, 4 ,5 ,6]);  % Opciones
 % y0(6)      = exp_data.LAC(1);             % Initial PAN
 
 % Parameters
-index_N     = [bio_dfna, glc_dfna, o2_dfna, etoh_dfna];
+index_N     = [bio_DFVB, glc_DFVB, o2_DFVB, etoh_DFVB];
 
             %   v_glc  K_G  K_iE  f_etoh  f_gly  f_cit  f_lac  
 % theta       =  [15     1    1e6    1.7    4    2.5   3];
@@ -232,7 +232,7 @@ alpha_dim   = size(modelo_N_reducido.nullS,2);
 t_span = [0, 11];
 % Simulate
 tic;
-[T_sol, Y_sol] = ode113(@dfna2fit_sanchez, t_span,y0,options,theta, modelo_N_reducido, index_N, alpha_dim);
+[T_sol, Y_sol] = ode113(@DFVB2fit_sanchez, t_span,y0,options,theta, modelo_N_reducido, index_N, alpha_dim);
 fprintf('\nCPU Time(s) = %.2f\n', toc)
 
 % Plot
@@ -242,7 +242,7 @@ hold on
 plot(T_sol, Y_sol(:,1))
 plot(exp_data.TIME, exp_data.X, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.', Location='southeast')
+legend('DFVB', 'Exp.', Location='southeast')
 ylabel('Concentration (g/L)')
 title('Biomass')
 
@@ -251,7 +251,7 @@ hold on
 plot(T_sol, Y_sol(:,2))
 plot(exp_data.TIME, exp_data.GLC, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.', Location='southeast')
+legend('DFVB', 'Exp.', Location='southeast')
 title('Glucose')
 ylabel('Concentration (g/L)')
 
@@ -260,7 +260,7 @@ hold on
 plot(T_sol, Y_sol(:,3))
 plot(exp_data.TIME, exp_data.ETOH, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.', Location='southeast')
+legend('DFVB', 'Exp.', Location='southeast')
 title('Ethanol')
 ylabel('Concentration (g/L)')
 % 
@@ -269,7 +269,7 @@ hold on
 plot(T_sol, Y_sol(:,4))
 plot(exp_data.TIME, exp_data.GLY, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.', Location='southeast')
+legend('DFVB', 'Exp.', Location='southeast')
 title('Glycerol')
 ylabel('Concentration (g/L)')
 
@@ -278,7 +278,7 @@ hold on
 plot(T_sol, Y_sol(:,5))
 plot(exp_data.TIME, exp_data.CIT, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.', Location='southeast')
+legend('DFVB', 'Exp.', Location='southeast')
 title('Citrate')
 ylabel('Concentration (g/L)')
 
@@ -287,7 +287,7 @@ hold on
 plot(T_sol, Y_sol(:,6))
 plot(exp_data.TIME, exp_data.LAC, 'ro')
 xlim(t_span)
-legend('DFNA', 'Exp.', Location='southeast')
+legend('DFVB', 'Exp.', Location='southeast')
 title('Lactate')
 ylabel('Concentration (g/L)')
 
@@ -300,7 +300,7 @@ ylabel('Concentration (g/L)')
 
 modelo = struct();
 
-modelo.model_DFNA  = modelo_N_reducido;
+modelo.model_DFVB  = modelo_N_reducido;
 modelo.index       = index_N;
 modelo.alpha_dim   = alpha_dim;
 modelo.y0          = y0;

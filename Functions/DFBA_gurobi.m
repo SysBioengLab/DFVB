@@ -1,50 +1,24 @@
 function [dy, v] = DFBA_gurobi(t,y,model,idx_met,idx_flux,params)
 %--------------------------------------------------------------------------
-% Dynamic flux balance analysis 
-% Resolve an optimization problem for pseudoestationary state S*v, with 
-% ODEs for biomass, substrate (glucose) and product (protein). Based on
-% Zhao et al 2017, Example 1: Spirallus
+% Dynamic flux balance analysis
+% Solves a pseudo-steady-state optimization problem S*v = 0 to obtain the
+% intracellular flux distribution and couple it to extracellular dynamics
+% for biomass, substrate (glucose), oxygen, acetate, CO2, NH4 and ethanol.
+% The model is solved using Gurobi (doens't require COBRA Toolbox).
 %
 % Inputs:
-%        t      : vector of time
-%        y      : vector with actual state of metabolites
-%        model  : standard form of metabolic network
-%        ix_glc : index of glucose flux in matrix S
-%        ix_bio : index of biomass flux in matrix S
-%        ix_prot: index of protein flux in matrix S
-%        params : (qs_max, k_S) for Monod
-%        FVA    : true for run flux variability analysis at each iteration
+%   t        : current time
+%   y        : vector of extracellular state concentrations
+%   model    : Gurobi model describing the metabolic network
+%   idx_met  : indices of metabolites in y
+%   idx_flux : indices of fluxes in the model solution vector
+%   params   : model parameters [q_max, K_S, vO2_max, K_O2, kla]
+%
+% Outputs:
+%   dy       : time derivative of the state vector
+%   v        : optimal flux vector returned by the LP solver 
 %--------------------------------------------------------------------------
 
-% %% Rutine for extract iteration time
-% % Variable persistente para almacenar el tiempo anterior
-% persistent prevTime
-% persistent iteration_time
-% 
-% if isempty(prevTime)
-%     prevTime = tic;
-% end
-% 
-% if t == 0
-%     iteration_time = [];
-% end
-% % Si no hay flag, estamos en una iteración
-% iteration_time = [iteration_time toc(prevTime)];  % Tiempo desde la última iteración
-% 
-% if t == 2
-%     figure
-%     plot(iteration_time)
-%     grid on
-%     xlabel('Iteration')
-%     ylabel('Time (s)')
-%     title('Iteration Time dCBA')
-%     fprintf('Cantidad de iteraciones = %d \n',size(iteration_time,2))
-%     % disp(sum(iteration_time))
-%     % disp(size(iteration_time,2))
-% end   
-% 
-% % Inicializar variable persistente
-% prevTime = tic;  % Iniciar cronómetro
 %% Rutine for WarmUp
 
 persistent sol_factible
@@ -59,9 +33,11 @@ gurobiparams.OutputFlag  = 0;
 gurobiparams.LPWarmStart = 1;
 
 %% Parameters
-q_max  = params(1);
-K_S    = params(2);
-
+q_max   = params(1);
+K_S     = params(2);
+vO2_max = params(3);  
+K_O2    = params(4);  
+kla     = params(5);
 %% Index
 bio_met = idx_met(1);
 glc_met = idx_met(2);
@@ -89,29 +65,18 @@ Ac = y(ac_met);
 
 % Calculate specific rates based on the substrates present
 
-if (G>1e-2)
-    rS   = q_max*G/(K_S+G); % mmol/gdcw/h
-else
-    rS   = 0;
-end
-
-if (Ac<1e-2)
+if (Ac<1e-4)
     model.lb(ac_flux) = 0;
 end
 
-
 % Update lower bound of uptake substrate
-model.lb(glc_flux)  = -rS;  
+model.lb(glc_flux)  = -q_max*G/(K_S+G);
 
 
 % Solution 
 sol = gurobi(model, gurobiparams);
 sol_factible = sol;
 
-% persistent alphas
-% if t == 0
-%     alphas = [];
-% end
 
 if strcmp(sol.status, 'OPTIMAL')
     mu    = sol.x(bio_flux);
@@ -125,7 +90,7 @@ if strcmp(sol.status, 'OPTIMAL')
 
     dy(bio_met) = mu*X;   %Biomass
     dy(glc_met) = rS*X;   %Glucose
-    dy(o2_met)  = rO2*X;  %Oxygen
+    dy(o2_met)  = rO2*X + kla*(0.3125 - O2);  %Oxygen
     dy(ac_met)  = rAc*X;  %Acetate
     dy(co2_met) = rCO2*X;
     dy(nh4_met) = rNH4*X;
@@ -136,6 +101,9 @@ if strcmp(sol.status, 'OPTIMAL')
 else
     dy = zeros(size(y,1),1);
     v  = zeros(size(model.lb))';
+    if (0.3125 - O2) > 1e-4
+        dy(o2_met)  = kla*(0.3125 - O2);
+    end
 end
 
 

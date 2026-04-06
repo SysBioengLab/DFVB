@@ -1,5 +1,24 @@
 function [intN, lb_int, ub_int, nullS, lb_ex, ub_ex, c, zero_rows_int, zero_rows_ex, rxn_names]  = forced_idx(model)
-
+%--------------------------------------------------------------------------
+% Identifies which fluxes in the metabolic model are forced to be zero based on the
+% structure of the null basis matrix. This is used to reduce the dimensionality
+% of the optimization problem
+%
+% Inputs:
+%   model     - DFVB model.
+%
+% Outputs:
+%   intN           - Internal flux matrix with zero rows removed
+%   lb_int         - Lower bounds of internal fluxes with zero rows removed
+%   ub_int         - Upper bounds of internal fluxes with zero rows removed
+%   nullS          - Null basis matrix with zero rows removed
+%   lb_ex          - Lower bounds of external fluxes with zero rows removed
+%   ub_ex          - Upper bounds of external fluxes with zero rows removed
+%   c              - Objective coefficients of external fluxes with zero rows removed
+%   zero_rows_int  - Indices of internal fluxes that are forced to be zero
+%   zero_rows_ex   - Indices of external fluxes that are forced to be zero
+%   rxn_names      - Names of the reactions corresponding to the non-zero external fluxes
+%--------------------------------------------------------------------------
 l_int = size(model.intN,1);
 l_ex  = size(model.nullS,1);
 

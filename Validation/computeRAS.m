@@ -1,4 +1,14 @@
 function ras = computeRAS(model, expr)
+% --------------------------------------------------------------------
+% Compute Reaction Activity Scores (RAS) from gene expression data and a metabolic model
+% Inputs:
+%   model - COBRA model structure with fields 'genes' and 'grRules'
+%   expr - vector of gene expression values corresponding to model.genes
+%
+% Output:
+%   ras - vector of reaction activity scores corresponding to model.reactions
+% --------------------------------------------------------------------
+
     % Step 1: count how many reactions each gene participates in
     numGenes = length(model.genes);
     geneUseCount = zeros(numGenes, 1);

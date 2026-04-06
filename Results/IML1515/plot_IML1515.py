@@ -6,17 +6,17 @@ from matplotlib.lines import Line2D
 from matplotlib.ticker import FuncFormatter
 
 # Read csv data
-dFNA_diaux = pd.read_csv('DFNA_iML_diaux_conc.csv')  
-dFBA_diaux = pd.read_csv('DFBA_iML_diaux_conc.csv')
-dFNA_diaux_reducido = pd.read_csv('DFNA_iML_reducido_diaux_conc.csv')
+dFNA_diaux = pd.read_csv('DFVB_iML_limited_conc.csv')  
+dFBA_diaux = pd.read_csv('DFBA_iML_limited_conc.csv')
+dFNA_diaux_reducido = pd.read_csv('DFVB_iML_reducido_limited_conc.csv')
 
-dFNA_aer = pd.read_csv('DFNA_iML_aer_conc.csv')  
+dFNA_aer = pd.read_csv('DFVB_iML_aer_conc.csv')  
 dFBA_aer = pd.read_csv('DFBA_iML_aer_conc.csv')
-dFNA_aer_reducido = pd.read_csv('DFNA_iML_reducido_aer_conc.csv')
+dFNA_aer_reducido = pd.read_csv('DFVB_iML_reducido_aer_conc.csv')
 
-dFNA_anaer = pd.read_csv('DFNA_iML_anaer_conc.csv')
+dFNA_anaer = pd.read_csv('DFVB_iML_anaer_conc.csv')
 dFBA_anaer = pd.read_csv('DFBA_iML_anaer_conc.csv')
-dFNA_anaer_reducido = pd.read_csv('DFNA_iML_reducido_anaer_conc.csv')
+dFNA_anaer_reducido = pd.read_csv('DFVB_iML_reducido_anaer_conc.csv')
 
 
 palette = sns.color_palette("plasma", 8)
@@ -88,7 +88,9 @@ for row in range(2):
     )
 
 plt.tight_layout()
-plt.savefig('../Figs/ecolicore_concentrations_comparison.svg', bbox_inches='tight', dpi=600)
+# plt.show()
+plt.close()
+# plt.savefig('../Figs/ecolicore_concentrations_comparison.svg', bbox_inches='tight', dpi=600)
 
 
 def RMSE(true, pred):
@@ -109,30 +111,10 @@ for cond, (df_true, df_pred) in condiciones.items():
         pred_interp = np.interp(df_true['Time'], df_pred['Time'], df_pred[var])
         rmse = RMSE(df_true[var], pred_interp)
         resultados.append({'Condition': cond, 'Variable': var, 'RMSE': rmse})
-rmse_df    = pd.DataFrame(resultados)
-rmse_pivot = rmse_df.pivot(index='Variable', columns='Condition', values='RMSE')
-print('RMSE Results DFNA vs DFBA:')
-print(rmse_pivot)
-print('\n')
 
-# RMSE for Reduced DFNA vs Full DFNA
-
-condiciones = {
-    'Aerobic': (dFNA_aer_reducido, dFBA_aer),
-    'Anaerobic': (dFNA_anaer_reducido, dFBA_anaer),
-    'Diauxic': (dFNA_diaux_reducido, dFBA_diaux)
-}
-
-resultados = []
-
-for cond, (df_true, df_pred) in condiciones.items():
-    for var in df_true.columns[1:]:  
-        pred_interp = np.interp(df_true['Time'], df_pred['Time'], df_pred[var])
-        rmse = RMSE(df_true[var], pred_interp)
-        resultados.append({'Condition': cond, 'Variable': var, 'RMSE': rmse})
-
-# Crear DataFrame de resultados
 rmse_df = pd.DataFrame(resultados)
 rmse_pivot = rmse_df.pivot(index='Variable', columns='Condition', values='RMSE')
-print('RMSE Results Reduced DFNA vs DFNA:')
-print(rmse_pivot)
+
+print("RMSE DFVB vs DFBA:")
+print(rmse_pivot.to_string(float_format=lambda x: f"{x:.2e}"))
+print('\n')
