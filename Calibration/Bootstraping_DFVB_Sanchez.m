@@ -40,7 +40,6 @@ Timing = NaN(Nboots, 1);
 Theta0 = NaN(Nboots, npar);
 
 % ======================== Bootstrap loop (parallel) ======================== %
-tic;
 for b = 1:Nboots
     % Independent seed for each replicate
     s = RandStream('Threefry','Seed',seeds(b));
@@ -53,16 +52,16 @@ for b = 1:Nboots
     fun_b = @(x) LossFunction_sanchez(x, modelo, data_b);
 
     % Optimization (sequential within each replicate)
+    t0 = tic;
     [xopt_b, fval_b, exit_b, output] = fminsearchbnd(fun_b, theta_init, [C_LB, p_LB], [C_UB, p_UB], opts);
+    Timing(b) = toc(t0);
 
     % Save results
     Xopt(b,:)   = xopt_b;
     Fval(b)     = fval_b;
     Exit(b)     = exit_b;
     Theta0(b,:) = theta_init;
-    fprintf("Iteration %d/%d completed\n", b, Nboots);
 end
-final_time = toc;
 
 %%
 % ------------------------- Consolidation/saving ----------------------- %

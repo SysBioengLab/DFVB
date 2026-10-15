@@ -32,20 +32,6 @@ C_UB = modelo.y0*1.3;
 p_LB = [1   1e-4  1e-3   0.1    0.01   0.01   0.01  ];
 p_UB = [50  1e4   1e5    100    10     10     10    ];
 
-% ------------------- Optimizer options (local) ------------------ %
-opts = optimoptions('patternsearch', ...
-    'SearchFcn', [], ...                   % Disable GA-based search
-    'PollMethod', 'GSSPositiveBasis2N', ...% Use GSS for a more robust exploration in polling
-    'MeshRotate', 'on', ...                % Rotation to avoid aligned local minima
-    'InitialMeshSize', 10, ...             % Large initial steps
-    'ScaleMesh', true, ...                 % Adaptive scaling of variables
-    'FunctionTolerance', 1e-6, ...         % Stopping criterion by tolerance
-    'StepTolerance', 1e-6, ...
-    'MeshTolerance', 1e-6, ...
-    'UseParallel', false, ...
-    'MaxTime', 1800, ...                   % Strict limit of 20 minutes (1200 seconds)
-    'MaxFunctionEvaluations', 10000);   % Adjust this number: maximum evaluations before MaxTime is reached
-
 % ---------------------- Preparation and preallocation --------------------- %
 rng(rngBase, 'twister');
 seeds = randi(1e9, Nboots, 1);
@@ -71,8 +57,7 @@ parfor b = 1:Nboots
     fun_b = @(x) LossFunction_DFBA_sanchez(x, modelo, data_b);
 
     % Optimization (sequential within each replicate)
-    [xopt_b, fval_b, exit_b] = patternsearch( ...
-        fun_b, theta_init, [], [], [], [], [C_LB, p_LB], [C_UB, p_UB], [], opts);
+    [xopt_b, fval_b, exit_b, output] = fminsearchbnd(fun_b, theta_init, [C_LB, p_LB], [C_UB, p_UB], opts);
 
     % Save results
     Xopt(b,:)   = xopt_b;

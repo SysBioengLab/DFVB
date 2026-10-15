@@ -28,7 +28,8 @@ color4 = '#3c2737';
 %% Cargar el modelo, data experimental y parametros
 load yeast9_anaerobic.mat
 load('data_exp_R1.mat');
-theta = table2array(readtable('Replicado1_params.csv'));
+theta_all = table2array(readtable('Bootstraping_DFVB_CYT.csv'));
+theta = mean(theta_all, 1);
 
 %% Composición de fuente de nitrógeno
 PAN  = [find(strcmp(model.rxnNames, 'L-arginine exchange'));
@@ -369,3 +370,133 @@ han = legend([h1 h2], {'Model', 'Experimental'});
 set(han, 'Position', [0.4 0.01 0.2 0.03], 'Orientation', 'horizontal');
 
 
+%% Sensitivity and Correlation Analysis
+epsilon   = 1e-3; 
+n_theta   = length(theta);
+n_vars    = 6;    % Biomass, Ammonia, Glucose, Fructose, Ethanol, PAN
+n_time    = length(t_exp);
+
+S_mat     = zeros(n_time * n_vars, n_theta); % Stacked Jacobian matrix for FIM
+S_rel_avg = zeros(n_theta, n_vars);          % Average relative sensitivity
+
+Y_nom = simulate_reduced_model(theta, t_rango1, t_rango2, t_exp, ammonia_exp(6), options, Temperature, modelo_N_reducido, index_N, PAN_struct_2, alpha_dim);
+
+% Avoid division by zero in relative calculations
+Y_nom_safe = Y_nom;
+Y_nom_safe(Y_nom_safe == 0) = 1e-8;
+
+for j = 1:n_theta
+    theta_plus  = theta;
+    theta_minus = theta;
+    
+    delta = epsilon * abs(theta(j));
+    if delta == 0
+        delta = 1e-6; 
+    end
+    
+    theta_plus(j)  = theta(j) + delta;
+    theta_minus(j) = theta(j) - delta;
+    
+    if theta_minus(j) < 0
+        theta_minus(j) = 0; 
+    end
+    
+    delta_plus  = theta_plus(j) - theta(j);
+    delta_minus = theta(j) - theta_minus(j);
+    
+    % Simulate perturbed models
+    Y_plus  = simulate_reduced_model(theta_plus, t_rango1, t_rango2, t_exp, ammonia_exp(6), options, Temperature, modelo_N_reducido, index_N, PAN_struct_2, alpha_dim);
+    Y_minus = simulate_reduced_model(theta_minus, t_rango1, t_rango2, t_exp, ammonia_exp(6), options, Temperature, modelo_N_reducido, index_N, PAN_struct_2, alpha_dim);
+    
+    % Absolute sensitivity 
+    dY_dtheta = (Y_plus - Y_minus) / (delta_plus + delta_minus);
+    
+    % Relative sensitivity
+    S_rel = dY_dtheta .* (theta(j) ./ Y_nom_safe);
+    
+    S_rel_avg(j, :) = mean(abs(S_rel), 1, 'omitnan');
+    S_mat(:, j) = dY_dtheta(:);
+end
+
+% Correlation Matrix via FIM
+FIM = S_mat' * S_mat;
+Cov = pinv(FIM); 
+
+Corr_matrix = zeros(n_theta, n_theta);
+for i = 1:n_theta
+    for j = 1:n_theta
+        Corr_matrix(i,j) = Cov(i,j) / sqrt(Cov(i,i) * Cov(j,j));
+    end
+end
+
+%% Visualization
+% Parameter Correlation Heatmap
+figure;
+imagesc(abs(Corr_matrix));
+colormap(whiteredcmap);
+colorbar;
+clim([0 1]);
+title('Parameter Correlation Matrix DFVB (\theta)');
+xlabel('Parameter Index');
+ylabel('Parameter Index');
+
+% Create a custom colormap with a hard threshold at 0.95
+m = 1000; % High resolution for a precise cutoff
+cmap = ones(m, 3); % Initialize all as white [1 1 1]
+threshold_idx = round(0.95 * m); % Calculate index for 0.95
+cmap(threshold_idx:end, :) = repmat([1 0 0], m - threshold_idx + 1, 1); % Red [1 0 0] for >= 0.95
+figure;
+imagesc(abs(Corr_matrix));
+colormap(cmap);
+colorbar;
+clim([0 1]);
+title('Parameter Correlation Matrix DFVB (|\rho| \geq 0.95)');
+xlabel('Parameter Index');
+ylabel('Parameter Index');
+
+
+% Average Relative Sensitivity Bar Chart
+figure;
+bar_labels = {'Biomass', 'Ammonia', 'Glucose', 'Fructose', 'Ethanol', 'PAN'};
+b = bar(S_rel_avg', 'grouped');
+set(gca, 'XTickLabel', bar_labels);
+title('Average Relative Sensitivity by Variable');
+ylabel('Sensitivity |(\partial Y / \partial \theta) \cdot (\theta / Y)|');
+legend_labels = arrayfun(@(x) sprintf('\\theta_{%d}', x), 1:n_theta, 'UniformOutput', false);
+legend(b, legend_labels, 'Location', 'northeastoutside');
+
+disp('Sensitivity and correlation analysis completed.');
+writetable(table(Corr_matrix(7:end, 7:end)), "Calibration/Results_Bootstraping/Correlation_matrix_DFVB_CYT.csv")
+
+
+function Y_interp = simulate_reduced_model(p, t1, t2, t_exp, NH3_mid, opt, Temp, model, idx_N, PAN_s, alpha_d)
+    % Simulates both periods and interpolates to experimental time points.
+    
+    % p(1:6): initial conditions. p(7:end): kinetic parameters.
+    [T1_sim, Y1_sim] = ode113(@model_DFVB2fit, t1, p(1:6), opt, p(7:end), Temp, model, idx_N, PAN_s, alpha_d);
+    
+    y0_2     = Y1_sim(end,:);
+    y0_2(2)  = NH3_mid; % Experimental correction between periods
+    [T2_sim, Y2_sim] = ode113(@model_DFVB2fit, t2, y0_2, opt, p(7:end), Temp, model, idx_N, PAN_s, alpha_d);
+    
+    % Merge solutions
+    T_sol_full = [T1_sim(1:end-1); T2_sim];
+    Y_sol_full = [Y1_sim(1:end-1, :); Y2_sim];
+    
+    % Interpolate to experimental time points
+    Y_interp = interp1(T_sol_full, Y_sol_full, t_exp, 'linear', 'extrap');
+end
+
+function cmap = whiteredcmap(m)
+    if nargin < 1
+        m = 64; 
+    end
+    
+    c1 = [1 1 1]; % Blanco (0)
+    c2 = [1 0 0]; % Rojo (1)
+    
+    % Interpolación lineal para cada canal RGB
+    cmap = [linspace(c1(1), c2(1), m)', ...
+            linspace(c1(2), c2(2), m)', ...
+            linspace(c1(3), c2(3), m)'];
+end

@@ -112,7 +112,7 @@ index_N    = index(4);
 index_etoh = index(5);
 
 % Nitrogen source
-index_PAN = PAN_struct.index_dfna;
+index_PAN = PAN_struct.index_DFVB;
 MW_PAN    = PAN_struct.MW_PAN;
 
 % Converting units
@@ -144,7 +144,7 @@ else
     model.rhs(end) =  vN_ggDW * (PAN/(N + PAN)) * 1000 / mean(MW_PAN);
 end
 
-%% Solve DFNA
+%% Solve DFVB
 sol = gurobi(model, gurobiparams);
 sol_factible = sol;
 

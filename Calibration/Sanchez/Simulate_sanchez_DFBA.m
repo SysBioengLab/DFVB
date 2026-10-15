@@ -28,7 +28,8 @@ color4 = '#3c2737';
 %% Cargar el modelo
 
 load yeast9-gem.mat
-parameters = table2array(readtable("R6_params.csv"));
+parameters_all = table2array(readtable("Bootstraping_DFBA_Sanchez.csv"));
+parameters = mean(parameters_all, 1);
 y0 = parameters(1:6);
 theta = parameters(7:end);
 
@@ -184,5 +185,119 @@ folder = 'Results/Calibration CyT/';
 % writetable(Experiment, [folder,'Experiment_3.csv'])
 
 
+%% Sensitivity and Correlation Analysis
+t_exp     = exp_data.TIME;
+epsilon   = 1e-3;
+n_theta   = length(theta);
+n_vars    = 6;    % Biomass, Glucose, Ethanol, Glycerol, Citrate, Lactate
+n_time    = length(t_exp);
 
+S_mat     = zeros(n_time * n_vars, n_theta); 
+S_rel_avg = zeros(n_theta, n_vars);          
+
+% 1. Nominal simulation evaluated at experimental time points
+Y_nom = simulate_sanchez_model(theta, y0, t_span, t_exp, options, model_DFBA, index_N);
+
+Y_nom_safe = Y_nom;
+Y_nom_safe(Y_nom_safe == 0) = 1e-8;
+
+for j = 1:n_theta
+    theta_plus  = theta;
+    theta_minus = theta;
+    
+    delta = epsilon * abs(theta(j));
+    if delta == 0
+        delta = 1e-6; 
+    end
+    
+    theta_plus(j)  = theta(j) + delta;
+    theta_minus(j) = theta(j) - delta;
+    
+    if theta_minus(j) < 0
+        theta_minus(j) = 0; 
+    end
+    
+    delta_plus  = theta_plus(j) - theta(j);
+    delta_minus = theta(j) - theta_minus(j);
+    
+    Y_plus  = simulate_sanchez_model(theta_plus, y0, t_span, t_exp, options, model_DFBA, index_N);
+    Y_minus = simulate_sanchez_model(theta_minus, y0, t_span, t_exp, options, model_DFBA, index_N);
+    
+    dY_dtheta = (Y_plus - Y_minus) / (delta_plus + delta_minus);
+    S_rel = dY_dtheta .* (theta(j) ./ Y_nom_safe);
+    
+    S_rel_avg(j, :) = mean(abs(S_rel), 1, 'omitnan');
+    S_mat(:, j) = dY_dtheta(:);
+end
+
+% 3. Correlation Matrix via FIM
+FIM = S_mat' * S_mat;
+Cov = pinv(FIM);
+Corr_matrix = zeros(n_theta, n_theta);
+for i = 1:n_theta
+    for j = 1:n_theta
+        Corr_matrix(i,j) = Cov(i,j) / sqrt(Cov(i,i) * Cov(j,j));
+    end
+end
+
+%% Visualization
+% Full Parameter Correlation Heatmap
+figure;
+imagesc(abs(Corr_matrix));
+colormap(whiteredcmap);
+colorbar;
+clim([0 1]);
+title('Parameter Correlation Matrix DFBA (|\rho|)');
+xlabel('Parameter Index');
+ylabel('Parameter Index');
+
+% Parameter Correlation Heatmap (Threshold >= 0.95)
+figure;
+imagesc(abs(Corr_matrix));
+m = 1000;
+cmap = ones(m, 3);
+threshold_idx = round(0.95 * m);
+cmap(threshold_idx:end, :) = repmat([1 0 0], m - threshold_idx + 1, 1);
+colormap(cmap);
+colorbar;
+clim([0 1]);
+title('Parameter Correlation Matrix DFBA (|\rho| \geq 0.95)');
+xlabel('Parameter Index');
+ylabel('Parameter Index');
+
+% Average Relative Sensitivity Bar Chart
+figure;
+bar_labels = {'Biomass', 'Glucose', 'Ethanol', 'Glycerol', 'Citrate', 'Lactate'};
+b = bar(S_rel_avg', 'grouped');
+set(gca, 'XTickLabel', bar_labels);
+title('Average Relative Sensitivity by Variable');
+ylabel('Sensitivity |(\partial Y / \partial \theta) \cdot (\theta / Y)|');
+legend_labels = arrayfun(@(x) sprintf('\\theta_{%d}', x), 1:n_theta, 'UniformOutput', false);
+legend(b, legend_labels, 'Location', 'northeastoutside');
+
+disp('Sensitivity and correlation analysis completed.');
+
+writetable(table(Corr_matrix), "Calibration/Results_Bootstraping/Correlation_matrix_DFBA_Sanchez.csv")
+
+% ----------------------------------------------------------------------- %
+% HELPER FUNCTIONS
+% ----------------------------------------------------------------------- %
+
+function Y_interp = simulate_sanchez_model(p_kin, y_init, t_range, t_points, opt, model, idx_N)
+    % Simulates a single period and interpolates to experimental time points
+    [T_sim, Y_sim] = ode113(@model_dFBA2fit_sanchez, t_range, y_init, opt, p_kin, model, idx_N);
+    Y_interp = interp1(T_sim, Y_sim, t_points, 'linear', 'extrap');
+end
+
+function cmap = whiteredcmap(m)
+    % Sequential White-Red colormap generator
+    if nargin < 1
+        m = 64; 
+    end
+    c1 = [1 1 1]; 
+    c2 = [1 0 0]; 
+    cmap = [linspace(c1(1), c2(1), m)', ...
+            linspace(c1(2), c2(2), m)', ...
+            linspace(c1(3), c2(3), m)'];
+end
 
