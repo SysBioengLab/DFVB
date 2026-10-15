@@ -1,4 +1,4 @@
-function [dxdt, da, v] = dfvb2fit_sanchez(t, x, theta, model, index, alpha_dim)
+function [dxdt, da, v] = DFVB2fit_sanchez(t, x, theta, model, index, alpha_dim)
 
 %% Rutine for WarmUp
 persistent sol_factible
